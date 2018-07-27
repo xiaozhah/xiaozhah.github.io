@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="没有图形化界面的机器导出图像计算机是Linux服务器, 无图形化界面链接How to save Image or Graphics in Terminal? sudo apt-get install xvfb xvfb-run wolfram此时运行这个代码就正常了12p=Graphics@Circle[];Export[&quot;test.jpg&quot;,p];">
+<meta name="keywords" content="Mathematica">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mathematica">
+<meta property="og:url" content="http://yoursite.com/2018/07/27/Mathematica/index.html">
+<meta property="og:site_name" content="Blog of Xiao">
+<meta property="og:description" content="没有图形化界面的机器导出图像计算机是Linux服务器, 无图形化界面链接How to save Image or Graphics in Terminal? sudo apt-get install xvfb xvfb-run wolfram此时运行这个代码就正常了12p=Graphics@Circle[];Export[&quot;test.jpg&quot;,p];">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/2018/07/27/Mathematica/1.png">
+<meta property="og:image" content="http://yoursite.com/2018/07/27/Mathematica/2.png">
+<meta property="og:image" content="http://yoursite.com/2018/07/27/Mathematica/3.png">
+<meta property="og:image" content="http://yoursite.com/2018/07/27/Mathematica/4.png">
+<meta property="og:updated_time" content="2018-07-27T03:59:54.796Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Mathematica">
+<meta name="twitter:description" content="没有图形化界面的机器导出图像计算机是Linux服务器, 无图形化界面链接How to save Image or Graphics in Terminal? sudo apt-get install xvfb xvfb-run wolfram此时运行这个代码就正常了12p=Graphics@Circle[];Export[&quot;test.jpg&quot;,p];">
+<meta name="twitter:image" content="http://yoursite.com/2018/07/27/Mathematica/1.png">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/07/27/Mathematica/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Mathematica | Blog of Xiao</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Blog of Xiao</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />Home</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />Tags</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+    <a href="/categories/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />Categories</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />Archives</a>
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/27/Mathematica/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xzhou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog of Xiao">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Mathematica
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-07-27 11:52:51 / Modified: 11:59:54" itemprop="dateCreated datePublished" datetime="2018-07-27T11:52:51+08:00">2018-07-27</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/编程/" itemprop="url" rel="index"><span itemprop="name">编程</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <!-- toc -->
+<h1 id="没有图形化界面的机器导出图像"><a href="#没有图形化界面的机器导出图像" class="headerlink" title="没有图形化界面的机器导出图像"></a>没有图形化界面的机器导出图像</h1><p>计算机是Linux服务器, 无图形化界面<br>链接<a href="https://mathematica.stackexchange.com/questions/157842/how-to-save-image-or-graphics-in-terminal" target="_blank" rel="noopener">How to save Image or Graphics in Terminal?</a></p>
+<p><code>sudo apt-get install xvfb
+xvfb-run wolfram</code><br>此时运行这个代码就正常了<br><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">p=<span class="keyword">Graphics</span>@<span class="keyword">Circle</span>[];</span><br><span class="line"><span class="keyword">Export</span>[<span class="string">"test.jpg"</span>,p];</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<p>当用到GPU并且执行wolframscript的语法是：<br><code>CUDA_VISIBLE_DEVICES=1 xvfb-run wolframscript -file test.wl</code></p>
+<h1 id="文件管理"><a href="#文件管理" class="headerlink" title="文件管理"></a>文件管理</h1><h2 id="列出文件夹下的文件"><a href="#列出文件夹下的文件" class="headerlink" title="列出文件夹下的文件"></a>列出文件夹下的文件</h2><p>列出当前目录和子目录下所有后缀为nb的文件<br><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FileNames</span>[<span class="string">"*.nb"</span>,<span class="string">"*"</span>,<span class="keyword">Infinity</span>]</span><br></pre></td></tr></table></figure></p>
+<h2 id="得到BaseName"><a href="#得到BaseName" class="headerlink" title="得到BaseName"></a>得到BaseName</h2><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FileBaseName</span>[<span class="string">"C:\\Users\\xzhou\\Desktop\\test.gif"</span>]</span><br><span class="line"><span class="comment">(*test*)</span></span><br></pre></td></tr></table></figure>
+<h2 id="保存mma表达式"><a href="#保存mma表达式" class="headerlink" title="保存mma表达式"></a>保存mma表达式</h2><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FilePrint</span>@<span class="keyword">Export</span>[<span class="string">"test.wl"</span>, <span class="keyword">Solve</span>[x^<span class="number">2</span> + a x + <span class="number">1</span> == <span class="number">0</span>, x]]</span><br><span class="line"><span class="comment">(*Or*)</span></span><br><span class="line"><span class="keyword">If</span>[<span class="keyword">FileExistsQ</span>[#], <span class="keyword">DeleteFile</span>[#]] &amp;@<span class="string">"test.wl"</span>;</span><br><span class="line">temp = <span class="keyword">Solve</span>[x^<span class="number">2</span> + a x + <span class="number">1</span> == <span class="number">0</span>, x];</span><br><span class="line"><span class="keyword">Save</span>[<span class="string">"test.wl"</span>, temp];</span><br><span class="line"><span class="keyword">FilePrint</span>@<span class="string">"test.wl"</span></span><br></pre></td></tr></table></figure>
+<h1 id="可视化"><a href="#可视化" class="headerlink" title="可视化"></a>可视化</h1><h2 id="CoordinateBoundingBoxArray"><a href="#CoordinateBoundingBoxArray" class="headerlink" title="CoordinateBoundingBoxArray"></a>CoordinateBoundingBoxArray</h2><p>输入边界坐标，自动均匀填充边界内的点坐标<br><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">CoordinateBoundingBoxArray[&#123;&#123;3, -1&#125;, &#123;8, 2&#125;&#125;];</span><br><span class="line"><span class="keyword">Graphics</span>[<span class="keyword">Point</span>[<span class="keyword">Flatten</span>[%, <span class="number">1</span>]], <span class="keyword">Frame</span> -&gt; <span class="keyword">True</span>]</span><br></pre></td></tr></table></figure></p>
+<h2 id="在MatrixPlot和Graphics中插入文字"><a href="#在MatrixPlot和Graphics中插入文字" class="headerlink" title="在MatrixPlot和Graphics中插入文字"></a>在MatrixPlot和Graphics中插入文字</h2><p>考虑Epilog选项和Inset图元</p>
+<h2 id="自动给曲线图打标签"><a href="#自动给曲线图打标签" class="headerlink" title="自动给曲线图打标签"></a>自动给曲线图打标签</h2><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">ListLinePlot</span>[<span class="keyword">RandomReal</span>[<span class="number">1</span>, <span class="number">26</span>] -&gt; <span class="keyword">CharacterRange</span>[<span class="string">"a"</span>, <span class="string">"z"</span>]]</span><br></pre></td></tr></table></figure>
+<img src="/2018/07/27/Mathematica/1.png">
+<h1 id="Dataset"><a href="#Dataset" class="headerlink" title="Dataset"></a>Dataset</h1><h2 id="深入、退出运算符"><a href="#深入、退出运算符" class="headerlink" title="深入、退出运算符"></a>深入、退出运算符</h2><p>值得注意的是TakeLargestBy是深入运算符，TakeLargest是退出运算符。</p>
+<ul>
+<li>在后面的运算符应用到更深一层之前，“深入”运算符被应用到原始数据集相应的部分. 深入运算符的特点是在作用于某一层时，<strong>它们不会改变数据更深层次的结构</strong>. 这确保后面的运算符操作时，子表达式的结构和原始数据集的相应层次是一样的. 最简单的深入运算符是 All，它选取某个给定层的所有部分，因此不会改变该层数据的结构</li>
+<li>在所有随后的运算符完成对深层数据的操作后，“退出”运算符被应用.因此<code>dataset[f,g]</code>是<code>Query[f, g] // Normal</code>,也就是<code>Map[g] /* f</code> .深入运算符对应于原始数据的层，而退出运算符对应于结果的层. 和深入运算符不同，<strong>退出运算符不必保持所操作数据的结构</strong>. <em>如果一个运算符没有被明确指定为深入运算符，假定其为退出运算符</em></li>
+</ul>
+<p><code>data[SortBy[#x - #y &amp;], Total, #^2 &amp;]</code>是深入、退出1、退出2运算符，因此先应用深入运算符，再应用<code>#^2 &amp;</code>，再应用<code>Total</code></p>
+<h2 id="数据分析"><a href="#数据分析" class="headerlink" title="数据分析"></a>数据分析</h2><p><code>sales = SemanticImport[&quot;ExampleData/RetailSales.tsv&quot;]</code><br><img src="/2018/07/27/Mathematica/2.png"><br><code>sales[All, &quot;Sales&quot;]</code>得到Sales列的所有数据<br><img src="/2018/07/27/Mathematica/3.png"><br>因为All是深入运算符，可以安全的更换为其他深入运算符，如<code>sales[Mean, &quot;Sales&quot;] // N</code><br>这时候如果想再针对月份和星期几排序可以这样：<br><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sales[GroupBy[DateValue[#<span class="keyword">Date</span>, <span class="string">"Month"</span>] &amp;], </span><br><span class="line"> GroupBy[DateValue[#<span class="keyword">Date</span>, <span class="string">"DayName"</span>] &amp;], <span class="keyword">Mean</span>, <span class="string">"Sales"</span>]</span><br></pre></td></tr></table></figure></p>
+<img src="/2018/07/27/Mathematica/4.png">
+<h1 id="实用小功能"><a href="#实用小功能" class="headerlink" title="实用小功能"></a>实用小功能</h1><h2 id="将pdf中的段落变成一行，方便谷歌翻译使用"><a href="#将pdf中的段落变成一行，方便谷歌翻译使用" class="headerlink" title="将pdf中的段落变成一行，方便谷歌翻译使用"></a>将pdf中的段落变成一行，方便谷歌翻译使用</h2><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">StringDelete[text, <span class="string">"\n"</span>] // <span class="keyword">CopyToClipboard</span></span><br></pre></td></tr></table></figure>
+<h1 id="导入导出"><a href="#导入导出" class="headerlink" title="导入导出"></a>导入导出</h1><h2 id="导入"><a href="#导入" class="headerlink" title="导入"></a>导入</h2><p>导入lst文件（每行均为数字构成）<code>Import[filename,&quot;List&quot;]</code><br>导入lst文件（每行均为字符串构成）<code>Import[filename,&quot;Lines&quot;]</code><br>导入纯文本构成的矩阵 <code>Import[filename,&quot;Table&quot;]</code><br>导入浮点数二进制文件 <code>BinaryReadList[filename,&quot;Real32&quot;]</code></p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Mathematica/" rel="tag"># Mathematica</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/07/26/Tensorflow/" rel="next" title="Tensorflow">
+                <i class="fa fa-chevron-left"></i> Tensorflow
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">xzhou</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-name">categories</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#没有图形化界面的机器导出图像"><span class="nav-number">1.</span> <span class="nav-text">没有图形化界面的机器导出图像</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#文件管理"><span class="nav-number">2.</span> <span class="nav-text">文件管理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#列出文件夹下的文件"><span class="nav-number">2.1.</span> <span class="nav-text">列出文件夹下的文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#得到BaseName"><span class="nav-number">2.2.</span> <span class="nav-text">得到BaseName</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#保存mma表达式"><span class="nav-number">2.3.</span> <span class="nav-text">保存mma表达式</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#可视化"><span class="nav-number">3.</span> <span class="nav-text">可视化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#CoordinateBoundingBoxArray"><span class="nav-number">3.1.</span> <span class="nav-text">CoordinateBoundingBoxArray</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在MatrixPlot和Graphics中插入文字"><span class="nav-number">3.2.</span> <span class="nav-text">在MatrixPlot和Graphics中插入文字</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自动给曲线图打标签"><span class="nav-number">3.3.</span> <span class="nav-text">自动给曲线图打标签</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Dataset"><span class="nav-number">4.</span> <span class="nav-text">Dataset</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#深入、退出运算符"><span class="nav-number">4.1.</span> <span class="nav-text">深入、退出运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据分析"><span class="nav-number">4.2.</span> <span class="nav-text">数据分析</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实用小功能"><span class="nav-number">5.</span> <span class="nav-text">实用小功能</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#将pdf中的段落变成一行，方便谷歌翻译使用"><span class="nav-number">5.1.</span> <span class="nav-text">将pdf中的段落变成一行，方便谷歌翻译使用</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#导入导出"><span class="nav-number">6.</span> <span class="nav-text">导入导出</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#导入"><span class="nav-number">6.1.</span> <span class="nav-text">导入</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">xzhou</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Muse</a> v6.3.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+	
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
