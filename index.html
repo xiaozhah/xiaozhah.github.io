@@ -295,6 +295,185 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/30/博客更新日志/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xzhou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog of Xiao">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/30/博客更新日志/" itemprop="url">
+                  博客更新日志
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-07-30 14:54:12 / Modified: 16:02:29" itemprop="dateCreated datePublished" datetime="2018-07-30T14:54:12+08:00">2018-07-30</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/博客/" itemprop="url" rel="index"><span itemprop="name">博客</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <!-- toc -->
+<p>2018年7月24日周二我开始着手研究博客。<br>起因是因为印象笔记的最高级会员一个笔记的容量也只有200MB，对于游记里喜欢放照片的我来说太小了。<br>因此决定从使用了五年的印象笔记迁移至我现在这个博客。</p>
+<p>曾经我写印象笔记是直接使用，后来使用StackExchange论坛发现了Markdown这种写作方式，于是购买了印象笔记插件“马克飞象”，总体来说不错。</p>
+<p>因此新博客站定很重要的一个功能就是支持Markdown。<br>最先注意到的框架是Hugo,因为自己喜欢的一个可视化设计师Nadieh Bremer的<a href="https://www.visualcinnamon.com/" target="_blank" rel="noopener">博客</a>使用的就是这个，我非常喜欢网站的主题Victor Hugo。我同时了解到这是一个静态网站生成器，优点是生成速度是同类框架中最快的，安装也简单。<br>但是一开始我就知道我希望自己的网站具备什么，比如旅行博客可以拥有背景音乐，但是搜索了下，资料很少。jekyll和Hexo和Hugo都是静态网站生成器，Hexo生成速度介于三者之间，而且中文文档也很不错，因为使用的是NodeJs所以拓展性是优于Hugo的。</p>
+<p>所以选择<strong>Hexo</strong>这个作为网站框架，主题先暂时配置成主流黑白风格的Next，不过我觉得这种风格太程序员了，之后会换掉。（更换主题在Hexo中很简单）</p>
+<ol>
+<li>与自己的Github关联并托管自己的网站内容在上面，很多博客已有叙述这里不多说。设置Next主题，设置根目录下_config.yml的theme: next,设置主题目录下的_config.yml的Schemes字段更换风格</li>
+<li>按照<a href="https://hexo.io/zh-cn/docs/asset-folders.html" target="_blank" rel="noopener">资源文件夹</a>的说法，打开根目录下_config.yml内的post_asset_folder字段,这样不管是图片还是自己本地的音乐都可以直接被Markdown引用。<br>每当<code>dexo new &quot;testPost&quot;</code>,<code>source/_posts_</code>目录下都会出现testPost文件夹以及testPost.md。所以素材放置在testPost中</li>
+</ol>
+<p>图片：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img IMG_20180720_105107.jpg %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>本地音乐：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% aplayer &quot;单车练习曲&quot; &quot;王雁盟&quot; &quot;单车练习曲.mp3&quot; &quot;单车练习曲.jpg&quot; %&#125;</span><br></pre></td></tr></table></figure></p>
+<p>网易云音乐：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> </span></span><br><span class="line"><span class="tag"><span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> </span></span><br><span class="line"><span class="tag"><span class="attr">marginwidth</span>=<span class="string">"0"</span> <span class="attr">marginheight</span>=<span class="string">"0"</span> </span></span><br><span class="line"><span class="tag"><span class="attr">width</span>=<span class="string">330</span> <span class="attr">height</span>=<span class="string">86</span> </span></span><br><span class="line"><span class="tag"><span class="attr">src</span>=<span class="string">"//music.163.com/outchain/player?type=2&amp;id=28582962&amp;auto=1&amp;height=66"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>对于那些想要更有规律地提供图片和其他资源以及想要将他们的资源分布在各个文章上的人来说，Hexo也提供了更组织化的方式来管理资源。这个稍微有些复杂但是管理资源非常方便的功能可以通过将 config.yml 文件中的 post_asset_folder 选项设为 true 来打开。</p>
+</blockquote>
+<ol start="3">
+<li><p>设置标签，分类以及文章目录（不要安装hexo-toc插件不然目录不能跳转）<br>设置如我这篇博客<br><code>toc: true</code>代表打开目录<code>&lt;!-- toc --&gt;</code>设置目录出现的位置<br><code>comments: true</code>代表打开评论，评论区域，使用韩国“来必力”评论系统，填写主题目录下的_config.yml的livere_uid字段</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 博客更新日志</span><br><span class="line">date: 2018-07-30 14:54:12</span><br><span class="line">tags: [博客,Hexo]</span><br><span class="line">comments: true</span><br><span class="line">toc: true</span><br><span class="line">categories: 博客</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&lt;!-- toc --&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>未来可能会设置标签云以及思维导图</p>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/29/C++ and VS/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -689,7 +868,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-07-29 22:39:27" itemprop="dateModified" datetime="2018-07-29T22:39:27+08:00">2018-07-29</time>
+                <time title="Modified: 2018-07-29 23:34:26" itemprop="dateModified" datetime="2018-07-29T23:34:26+08:00">2018-07-29</time>
               
             
           </span>
@@ -744,7 +923,8 @@
           <!-- toc -->
 <h1 id="设置问题"><a href="#设置问题" class="headerlink" title="设置问题"></a>设置问题</h1><h2 id="没有图形化界面的机器导出图像"><a href="#没有图形化界面的机器导出图像" class="headerlink" title="没有图形化界面的机器导出图像"></a>没有图形化界面的机器导出图像</h2><p>计算机是Linux服务器, 无图形化界面<br>链接<a href="https://mathematica.stackexchange.com/questions/157842/how-to-save-image-or-graphics-in-terminal" target="_blank" rel="noopener">How to save Image or Graphics in Terminal?</a></p>
 <p><code>sudo apt-get install xvfb
-xvfb-run wolfram</code><br>此时运行这个代码就正常了<br><figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">p=<span class="keyword">Graphics</span>@<span class="keyword">Circle</span>[];</span><br><span class="line"><span class="keyword">Export</span>[<span class="string">"test.jpg"</span>,p];</span><br></pre></td></tr></table></figure></p>
+xvfb-run wolfram</code><br>此时运行这个代码就正常了</p>
+<figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">p=<span class="keyword">Graphics</span>@<span class="keyword">Circle</span>[];</span><br><span class="line"><span class="keyword">Export</span>[<span class="string">"test.jpg"</span>,p];</span><br></pre></td></tr></table></figure>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/07/27/Mathematica/#more" rel="contents">
@@ -1627,12 +1807,12 @@ xvfb-run wolfram</code><br>此时运行这个代码就正常了<br><figure class
 
       
         
-          <div id="aplayer-lipqqBuK" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
+          <div id="aplayer-draDmrVz" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">
             <pre class="aplayer-lrc-content"></pre>
         </div>
         <script>
           var ap = new APlayer({
-            element: document.getElementById("aplayer-lipqqBuK"),
+            element: document.getElementById("aplayer-draDmrVz"),
             narrow: false,
             autoplay: false,
             showlrc: false,
@@ -1736,7 +1916,7 @@ xvfb-run wolfram</code><br>此时运行这个代码就正常了<br><figure class
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -1759,7 +1939,9 @@ xvfb-run wolfram</code><br>此时运行这个代码就正常了<br><figure class
                     
                       
                     
-                    <span class="site-state-item-count">5</span>
+                      
+                    
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -1792,7 +1974,11 @@ xvfb-run wolfram</code><br>此时运行这个代码就正常了<br><figure class
                     
                       
                     
-                    <span class="site-state-item-count">10</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
