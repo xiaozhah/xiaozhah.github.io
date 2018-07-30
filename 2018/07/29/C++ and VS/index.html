@@ -118,7 +118,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/07/29/C++%20and%20VS/1.png">
 <meta property="og:image" content="http://yoursite.com/2018/07/29/C++%20and%20VS/2.png">
-<meta property="og:updated_time" content="2018-07-29T14:28:10.575Z">
+<meta property="og:updated_time" content="2018-07-30T08:12:41.748Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++ and VS">
 <meta name="twitter:description" content="VS知识快捷键Ctrl-K + Ctrl-C： 注释一段选择代码Ctrl-K+ Ctrl-U： 取消一段选择代码的注释格式化整篇代码： Ctrl+K， D">
@@ -342,12 +342,24 @@
                 
               
 
-              <time title="Created: 2018-07-29 22:21:00 / Modified: 22:28:10" itemprop="dateCreated datePublished" datetime="2018-07-29T22:21:00+08:00">2018-07-29</time>
+              <time title="Created: 2018-07-29 22:21:00" itemprop="dateCreated datePublished" datetime="2018-07-29T22:21:00+08:00">2018-07-29</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-07-30 16:12:41" itemprop="dateModified" datetime="2018-07-30T16:12:41+08:00">2018-07-30</time>
               
             
           </span>
@@ -486,9 +498,7 @@
 <li><p>assert<br>assert宏能测试传入表达式的真假值，当表达式为真(true)，则不会有任何反应；当表达式为假(false)，则函数将输出错误信息，并中断程序的执行。</p>
 </li>
 </ul>
-<p>##疑问</p>
-<p>###如何在sprintf函数中使用string？</p>
-<p>sprintf是C++继承自C语言的函数，无法直接支持string类型，所以要先把string类型转为基础类型，也就是char*。<br>这里需要使用string类的成员函数c_str();该成员函数功能为，将string的内容转为C语言的字符数组表达形式。<br>所以用sprintf将string对象str，输出的char[]数组array中的代码可以写作： <code>sprintf(array, &quot;%s&quot;, str.c_str());</code><br>除此外，还可以用strcpy函数，使代码更简单：<code>strcpy(array, str.c_str());</code></p>
+<h2 id="疑问-1"><a href="#疑问-1" class="headerlink" title="疑问"></a>疑问</h2><h3 id="如何在sprintf函数中使用string？"><a href="#如何在sprintf函数中使用string？" class="headerlink" title="如何在sprintf函数中使用string？"></a>如何在sprintf函数中使用string？</h3><p>sprintf是C++继承自C语言的函数，无法直接支持string类型，所以要先把string类型转为基础类型，也就是char*。<br>这里需要使用string类的成员函数c_str();该成员函数功能为，将string的内容转为C语言的字符数组表达形式。<br>所以用sprintf将string对象str，输出的char[]数组array中的代码可以写作： <code>sprintf(array, &quot;%s&quot;, str.c_str());</code><br>除此外，还可以用strcpy函数，使代码更简单：<code>strcpy(array, str.c_str());</code></p>
 <h2 id="实际例子"><a href="#实际例子" class="headerlink" title="实际例子"></a>实际例子</h2><h3 id="建立二维数组"><a href="#建立二维数组" class="headerlink" title="建立二维数组"></a>建立二维数组</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//开辟内存</span></span><br><span class="line"><span class="keyword">float</span> **ppTrgAnswer_Data = <span class="keyword">new</span> <span class="keyword">float</span>*[nTrgPhoneNum];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nTrgPhoneNum; i++)</span><br><span class="line">&#123;</span><br><span class="line">    ppTrgAnswer_Data[i] = <span class="keyword">new</span> <span class="keyword">float</span>[MAX_QUES_NUM];</span><br><span class="line">    <span class="built_in">memset</span>(ppTrgAnswer_Data[i], <span class="number">0</span>, <span class="keyword">sizeof</span>(<span class="keyword">float</span>)*MAX_QUES_NUM);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//释放内存</span></span><br><span class="line"><span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; nTrgPhoneNum; i++)</span><br><span class="line">    <span class="keyword">delete</span>[] ppTrgAnswer_Data[i];</span><br><span class="line"><span class="keyword">delete</span>[] ppTrgAnswer_Data;</span><br></pre></td></tr></table></figure>
 
       
@@ -612,7 +622,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-count">10</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -674,7 +684,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">12</span>
+                      
+                    
+                    <span class="site-state-item-count">13</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -710,7 +722,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#VS知识"><span class="nav-number">1.</span> <span class="nav-text">VS知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#快捷键"><span class="nav-number">1.1.</span> <span class="nav-text">快捷键</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#疑问"><span class="nav-number">1.2.</span> <span class="nav-text">疑问</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么项目总是让我们编译"><span class="nav-number">1.2.1.</span> <span class="nav-text">为什么项目总是让我们编译</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何在VS里添加头文件包含路径"><span class="nav-number">1.2.2.</span> <span class="nav-text">如何在VS里添加头文件包含路径</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#C-知识"><span class="nav-number">2.</span> <span class="nav-text">C++知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#知识"><span class="nav-number">2.1.</span> <span class="nav-text">知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#注意事项"><span class="nav-number">2.1.1.</span> <span class="nav-text">注意事项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#指针"><span class="nav-number">2.1.2.</span> <span class="nav-text">指针</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#拷贝"><span class="nav-number">2.1.3.</span> <span class="nav-text">拷贝</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#拷贝数组至另一个数组-数组元素为N个"><span class="nav-number">2.1.3.1.</span> <span class="nav-text">拷贝数组至另一个数组(数组元素为N个)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测量时间"><span class="nav-number">2.1.4.</span> <span class="nav-text">测量时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数"><span class="nav-number">2.1.5.</span> <span class="nav-text">函数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实际例子"><span class="nav-number">2.2.</span> <span class="nav-text">实际例子</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#建立二维数组"><span class="nav-number">2.2.1.</span> <span class="nav-text">建立二维数组</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#VS知识"><span class="nav-number">1.</span> <span class="nav-text">VS知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#快捷键"><span class="nav-number">1.1.</span> <span class="nav-text">快捷键</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#疑问"><span class="nav-number">1.2.</span> <span class="nav-text">疑问</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么项目总是让我们编译"><span class="nav-number">1.2.1.</span> <span class="nav-text">为什么项目总是让我们编译</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何在VS里添加头文件包含路径"><span class="nav-number">1.2.2.</span> <span class="nav-text">如何在VS里添加头文件包含路径</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#C-知识"><span class="nav-number">2.</span> <span class="nav-text">C++知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#知识"><span class="nav-number">2.1.</span> <span class="nav-text">知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#注意事项"><span class="nav-number">2.1.1.</span> <span class="nav-text">注意事项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#指针"><span class="nav-number">2.1.2.</span> <span class="nav-text">指针</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#拷贝"><span class="nav-number">2.1.3.</span> <span class="nav-text">拷贝</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#拷贝数组至另一个数组-数组元素为N个"><span class="nav-number">2.1.3.1.</span> <span class="nav-text">拷贝数组至另一个数组(数组元素为N个)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#测量时间"><span class="nav-number">2.1.4.</span> <span class="nav-text">测量时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数"><span class="nav-number">2.1.5.</span> <span class="nav-text">函数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#疑问-1"><span class="nav-number">2.2.</span> <span class="nav-text">疑问</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#如何在sprintf函数中使用string？"><span class="nav-number">2.2.1.</span> <span class="nav-text">如何在sprintf函数中使用string？</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实际例子"><span class="nav-number">2.3.</span> <span class="nav-text">实际例子</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#建立二维数组"><span class="nav-number">2.3.1.</span> <span class="nav-text">建立二维数组</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
