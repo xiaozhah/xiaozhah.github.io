@@ -124,7 +124,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/07/26/Python/5.jpg">
 <meta property="og:image" content="http://yoursite.com/2018/07/26/Python/4.gif">
 <meta property="og:image" content="http://yoursite.com/2018/07/26/Python/6.png">
-<meta property="og:updated_time" content="2018-07-30T13:18:53.515Z">
+<meta property="og:updated_time" content="2018-08-04T15:02:55.873Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python">
 <meta name="twitter:description" content="使用中文# -*- coding: utf-8 -*- 告诉Python解释器，用UTF-8编码读取源代码print u&amp;#39;中文&amp;#39;  u表示Unicode字符串 Python说明Python代码的缩进规则说：最好使用4个空格ipython --pylab 导入了numpy(np) 和 matplotlib">
@@ -396,7 +396,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-07-30 21:18:53" itemprop="dateModified" datetime="2018-07-30T21:18:53+08:00">2018-07-30</time>
+                <time title="Modified: 2018-08-04 23:02:55" itemprop="dateModified" datetime="2018-08-04T23:02:55+08:00">2018-08-04</time>
               
             
           </span>
@@ -623,6 +623,8 @@
 <li>os.makedirs(path)函数创建多级目录</li>
 <li>os.listdir(path)可以得到一个包含当前目录下文件和子目录的List列表（但是是乱序的，需要sorted）</li>
 <li>os.walk() 方法用于通过在目录树种游走输出在目录中的文件名，向上或者向下</li>
+<li>os.path.split 用于分割路径为目录路径和不带后缀的文件名</li>
+<li>os.path.split 得到不带后缀的文件名</li>
 </ul>
 <h2 id="显示进度条"><a href="#显示进度条" class="headerlink" title="显示进度条"></a>显示进度条</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> time <span class="keyword">import</span> sleep</span><br><span class="line"><span class="keyword">from</span> tqdm <span class="keyword">import</span> tqdm</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> tqdm(range(<span class="number">100</span>)):</span><br><span class="line">    sleep(<span class="number">0.01</span>)</span><br><span class="line">    </span><br><span class="line"><span class="comment">#也可以用于迭代器 但是要传total参数告诉它迭代器的大小</span></span><br><span class="line"><span class="keyword">for</span> index, batch <span class="keyword">in</span> tqdm(enumerate(dataiter),total=num_examples/batch_size,unit=<span class="string">"mini-batchs"</span>):</span><br><span class="line">    <span class="keyword">pass</span></span><br></pre></td></tr></table></figure>
 <p><code>print(&quot;Epoch %d&quot; % epoch)</code>可以改为<code>tqdm.write(&quot;Epoch %d&quot; % epoch)</code></p>
