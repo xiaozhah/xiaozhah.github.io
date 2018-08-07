@@ -124,7 +124,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/07/26/Python/5.jpg">
 <meta property="og:image" content="http://yoursite.com/2018/07/26/Python/4.gif">
 <meta property="og:image" content="http://yoursite.com/2018/07/26/Python/6.png">
-<meta property="og:updated_time" content="2018-08-04T15:02:55.873Z">
+<meta property="og:updated_time" content="2018-08-07T02:45:14.401Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python">
 <meta name="twitter:description" content="使用中文# -*- coding: utf-8 -*- 告诉Python解释器，用UTF-8编码读取源代码print u&amp;#39;中文&amp;#39;  u表示Unicode字符串 Python说明Python代码的缩进规则说：最好使用4个空格ipython --pylab 导入了numpy(np) 和 matplotlib">
@@ -396,7 +396,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-08-04 23:02:55" itemprop="dateModified" datetime="2018-08-04T23:02:55+08:00">2018-08-04</time>
+                <time title="Modified: 2018-08-07 10:45:14" itemprop="dateModified" datetime="2018-08-07T10:45:14+08:00">2018-08-07</time>
               
             
           </span>
@@ -653,8 +653,7 @@
 <h3 id="找不到conda"><a href="#找不到conda" class="headerlink" title="找不到conda"></a>找不到conda</h3><p>对于Linux: 如果最终conda not found 只需要修改~/.bashrc 增加 export PATH=”/home/xzhou/anaconda2/bin:$PATH”,然后source ~/.bashrc就行了<br>对于window: scripts文件夹路径作为环境变量</p>
 <h3 id="ipython的环境不正常"><a href="#ipython的环境不正常" class="headerlink" title="ipython的环境不正常"></a>ipython的环境不正常</h3><p>当激活一个环境后 ipython的sys.executable不对劲 只需要Reactivate the environment or run hash -r (in bash) or rehash (in zsh). 就行了</p>
 <h3 id="Conda不能联网"><a href="#Conda不能联网" class="headerlink" title="Conda不能联网"></a>Conda不能联网</h3><p>注意当conda不能用时可以考虑使用手机USB共享网络，但是一定要关闭微软输入法，不然会导致蓝屏。最好用4G网络，更新顺利。使用科大镜像</p>
-<p>conda config –add channels <a href="https://mirrors.ustc.edu.cn/anaconda/pkgs/free/" target="_blank" rel="noopener">https://mirrors.ustc.edu.cn/anaconda/pkgs/free/</a><br>conda config –add channels <a href="https://mirrors.ustc.edu.cn/anaconda/pkgs/main/" target="_blank" rel="noopener">https://mirrors.ustc.edu.cn/anaconda/pkgs/main/</a><br>conda config –set show_channel_urls yes</p>
-<p>移除使用conda config –remove channels <a href="https://mirrors.ustc.edu.cn/anaconda/pkgs/free/" target="_blank" rel="noopener">https://mirrors.ustc.edu.cn/anaconda/pkgs/free/</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># 优先使用清华 conda 镜像。</span><br><span class="line">conda config --prepend channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/</span><br><span class="line"></span><br><span class="line"># 或者选用科大 conda 镜像。</span><br><span class="line">conda config --prepend channels http://mirrors.ustc.edu.cn/anaconda/pkgs/free/</span><br><span class="line"></span><br><span class="line">conda config --set show_channel_urls yes</span><br><span class="line"></span><br><span class="line"># 移除镜像</span><br><span class="line">conda config --remove channels https://mirrors.ustc.edu.cn/anaconda/pkgs/free/</span><br></pre></td></tr></table></figure>
 <h2 id="待Check"><a href="#待Check" class="headerlink" title="待Check"></a>待Check</h2><p>如果conda create -n test_env python=2.7 创建出的环境并不在envs里，那么执行<br>conda create –prefix /tmp/test-env python=2.7</p>
 
       
