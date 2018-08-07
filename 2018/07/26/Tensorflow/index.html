@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="Blog of Xiao">
 <meta property="og:description" content="Keras与Tensorflow联动123456789101112131415161718192021222324252627282930313233343536import tensorflow as tffrom tensorflow.examples.tutorials.mnist import input_datamnist_data = input_data.read_data_set">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-07T12:23:14.685Z">
+<meta property="og:updated_time" content="2018-08-07T12:28:19.274Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Tensorflow">
 <meta name="twitter:description" content="Keras与Tensorflow联动123456789101112131415161718192021222324252627282930313233343536import tensorflow as tffrom tensorflow.examples.tutorials.mnist import input_datamnist_data = input_data.read_data_set">
@@ -387,7 +387,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-08-07 20:23:14" itemprop="dateModified" datetime="2018-08-07T20:23:14+08:00">2018-08-07</time>
+                <time title="Modified: 2018-08-07 20:28:19" itemprop="dateModified" datetime="2018-08-07T20:28:19+08:00">2018-08-07</time>
               
             
           </span>
@@ -465,7 +465,7 @@
 </blockquote>
 <p>发现了什么吧，就是它补零了。小小说些题外话，你见过<code>np.array([[1],[1,2],[1,2,3]])</code>的返回值吗？没吧，是Object而不是int64。因为numpy不支持，但是python本身支持<code>[[1],[1,2],[1,2,3]]</code>。这就不如Mathematica了,表扬一下顺便推荐这个语言！</p>
 <p>如果改成<code>dequeue = input_queue.dequeue_many(1)</code>，一次只出一个箱子那么就不会出现补零情况了。所以补零发生在<code>sess.run(dequeue)</code>的时候</p>
-<p>甚至它还支持shape完全不定的情况<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">import tensorflow as tf</span><br><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line">input_queue = tf.PaddingFIFOQueue(capacity=10,</span><br><span class="line">                                  dtypes=[tf.int32], shapes=[(None,None)])</span><br><span class="line"></span><br><span class="line">placeholder = tf.placeholder(dtype=tf.int32, shape=[None,None])</span><br><span class="line"></span><br><span class="line">enqueue_op = input_queue.enqueue([placeholder])</span><br><span class="line">dequeue = input_queue.dequeue_many(3)</span><br><span class="line">with tf.Session() as sess:</span><br><span class="line">    #filled the queue</span><br><span class="line">    for i in range(10):</span><br><span class="line">        data = np.arange((i+1)**2).reshape(i+1,i+1)+i</span><br><span class="line">        sess.run(enqueue_op,feed_dict=&#123;placeholder:data&#125;)</span><br><span class="line">    print sess.run(dequeue)</span><br></pre></td></tr></table></figure></p>
+<p>甚至它还支持shape完全不定的情况<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">import tensorflow as tf</span><br><span class="line">import numpy as np</span><br><span class="line"></span><br><span class="line">input_queue = tf.PaddingFIFOQueue(capacity=10,dtypes=[tf.int32],</span><br><span class="line">                                  shapes=[(None,None)])</span><br><span class="line"></span><br><span class="line">placeholder = tf.placeholder(dtype=tf.int32, shape=[None,None])</span><br><span class="line"></span><br><span class="line">enqueue_op = input_queue.enqueue([placeholder])</span><br><span class="line">dequeue = input_queue.dequeue_many(3)</span><br><span class="line">with tf.Session() as sess:</span><br><span class="line">    #filled the queue</span><br><span class="line">    for i in range(10):</span><br><span class="line">        data = np.arange((i+1)**2).reshape(i+1,i+1)+i</span><br><span class="line">        sess.run(enqueue_op,feed_dict=&#123;placeholder:data&#125;)</span><br><span class="line">    print sess.run(dequeue)</span><br></pre></td></tr></table></figure></p>
 <blockquote>
 <p>[[[ 0  0  0] [ 0  0  0] [ 0  0  0]]<br>  [[ 1  2  0] [ 3  4  0] [ 0  0  0]]<br>  [[ 2  3  4] [ 5  6  7] [ 8  9 10]]]</p>
 </blockquote>
