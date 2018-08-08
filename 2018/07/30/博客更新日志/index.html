@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="Blog of Xiao">
 <meta property="og:description" content="2018年7月24日周二我开始着手研究博客。起因是因为印象笔记的最高级会员一个笔记的容量也只有200MB，对于游记里喜欢放照片的我来说太小了。因此决定从使用了五年的印象笔记迁移至我现在这个博客。 曾经我写印象笔记是直接使用，后来使用StackExchange论坛发现了Markdown这种写作方式，于是购买了印象笔记插件“马克飞象”，总体来说不错。 因此新博客站定很重要的一个功能就是支持Markd">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-07T14:50:19.001Z">
+<meta property="og:updated_time" content="2018-08-08T12:49:10.338Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="博客更新日志">
 <meta name="twitter:description" content="2018年7月24日周二我开始着手研究博客。起因是因为印象笔记的最高级会员一个笔记的容量也只有200MB，对于游记里喜欢放照片的我来说太小了。因此决定从使用了五年的印象笔记迁移至我现在这个博客。 曾经我写印象笔记是直接使用，后来使用StackExchange论坛发现了Markdown这种写作方式，于是购买了印象笔记插件“马克飞象”，总体来说不错。 因此新博客站定很重要的一个功能就是支持Markd">
@@ -395,7 +395,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-08-07 22:50:19" itemprop="dateModified" datetime="2018-08-07T22:50:19+08:00">2018-08-07</time>
+                <time title="Modified: 2018-08-08 20:49:10" itemprop="dateModified" datetime="2018-08-08T20:49:10+08:00">2018-08-08</time>
               
             
           </span>
@@ -461,9 +461,10 @@
 <a id="more"></a>
 <p>最先注意到的框架是Hugo,因为自己喜欢的一个可视化设计师Nadieh Bremer的<a href="https://www.visualcinnamon.com/" target="_blank" rel="noopener">博客</a>使用的就是这个，我非常喜欢网站的主题Victor Hugo。我同时了解到这是一个静态网站生成器，优点是生成速度是同类框架中最快的，安装也简单。<br>但是一开始我就知道我希望自己的网站具备什么，比如旅行博客可以拥有背景音乐，但是搜索了下，资料很少。jekyll和Hexo和Hugo都是静态网站生成器，Hexo生成速度介于三者之间，而且中文文档也很不错，因为使用的是NodeJs所以拓展性是优于Hugo的。</p>
 <p>所以选择<strong>Hexo</strong>这个作为网站框架，主题先暂时配置成主流黑白风格的Next，不过我觉得这种风格太程序员了，之后会换掉。（更换主题在Hexo中很简单）</p>
+<p><strong>注意：以下主目录下的_config.yml称为<kbd>站点配置文件</kbd>，主目录下的themes目录下的_config.yml称为<kbd>主题配置文件</kbd></strong></p>
 <ol>
 <li>与自己的Github关联并托管自己的网站内容在上面，很多博客已有叙述这里不多说。设置Next主题，设置根目录下_config.yml的theme: next,设置主题目录下的_config.yml的Schemes字段更换风格</li>
-<li>按照<a href="https://hexo.io/zh-cn/docs/asset-folders.html" target="_blank" rel="noopener">资源文件夹</a>的说法，打开根目录下_config.yml内的post_asset_folder字段,这样不管是图片还是自己本地的音乐都可以直接被Markdown引用。<br>每当<code>dexo new &quot;testPost&quot;</code>,<code>source/_posts_</code>目录下都会出现testPost文件夹以及testPost.md。所以素材放置在testPost中</li>
+<li>按照<a href="https://hexo.io/zh-cn/docs/asset-folders.html" target="_blank" rel="noopener">资源文件夹</a>的说法，打开<kbd>站点配置文件</kbd>内的post_asset_folder字段,这样不管是图片还是自己本地的音乐都可以直接被Markdown引用。<br>每当<code>dexo new &quot;testPost&quot;</code>,<code>source/_posts_</code>目录下都会出现testPost文件夹以及testPost.md。所以素材放置在testPost中</li>
 </ol>
 <p>图片：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_img IMG_20180720_105107.jpg %&#125;</span><br></pre></td></tr></table></figure></p>
 <p>本地音乐：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% aplayer &quot;单车练习曲&quot; &quot;王雁盟&quot; &quot;单车练习曲.mp3&quot; &quot;单车练习曲.jpg&quot; %&#125;</span><br></pre></td></tr></table></figure></p>
@@ -475,18 +476,25 @@
 <li><p>设置标签，分类以及文章目录（不要安装hexo-toc插件不然目录不能跳转）<br>设置如我这篇博客<br><code>toc: true</code>代表打开目录<code>&lt;!-- toc --&gt;</code>设置目录出现的位置<br><code>comments: true</code>代表打开评论，评论区域，使用韩国“来必力”评论系统，填写主题目录下的_config.yml的livere_uid字段</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 博客更新日志</span><br><span class="line">date: 2018-07-30 14:54:12</span><br><span class="line">tags: [博客,Hexo]</span><br><span class="line">comments: true</span><br><span class="line">toc: true</span><br><span class="line">categories: 博客</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&lt;!-- toc --&gt;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>2018/7/30 增加<a href="https://github.com/theme-next/hexo-generator-searchdb" target="_blank" rel="noopener">搜索</a>功能。<br>修改站点配置文件_config.yml</p>
+<li><p>2018/7/30 增加<a href="https://github.com/theme-next/hexo-generator-searchdb" target="_blank" rel="noopener">搜索</a>功能。<br>修改<kbd>站点配置文件</kbd></p>
 <blockquote>
 <p>search:<br>path: search.xml<br>field: post<br>format: html<br>limit: 10000</p>
 </blockquote>
 </li>
 </ol>
-<p>修改主题配置文件/themes/next下的_config.yml的enable，设置为true</p>
+<p>修改<kbd>主题配置文件</kbd>local_search字段的enable，设置为true</p>
 <ol start="5">
-<li><p>增加了“关于我“页面与个人头像以及站点统计（使用不蒜子）与背景图片（修改了themes\next\source\css\ _custom\custom.styl文件，图片来源于<a href="https://source.unsplash.com/" target="_blank" rel="noopener">https://source.unsplash.com/</a>）</p>
+<li>增加了以下几个方面：</li>
+</ol>
+<ul>
+<li>新增“关于我“页面:去掉<kbd>主题配置文件</kbd>menu的<code>about: /about/ || user</code>的注释</li>
+<li>修改个人头像:修改<kbd>主题配置文件</kbd>avatar字段的url。我这里是<code>/images/icon.jpg</code></li>
+<li>增加站点统计（使用不蒜子）:设置<kbd>主题配置文件</kbd>busuanzi_count的enable为true</li>
+<li>增加背景图片（修改了<code>themes\next\source\css\_custom\custom.styl</code>文件，图片来源于<a href="https://source.unsplash.com/" target="_blank" rel="noopener">https://source.unsplash.com/</a>）<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">// Custom styles.</span><br><span class="line">body &#123;</span><br><span class="line">    background:url(https://images.unsplash.com/photo-1533555855029-9341affa632a?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=7df5c95df1834e4ff9838f6a96c95096&amp;auto=format&amp;fit=crop&amp;w=2380&amp;q=80);</span><br><span class="line">    background-repeat: no-repeat;</span><br><span class="line">    background-attachment:fixed;</span><br><span class="line">    background-position:50% 50%;</span><br><span class="line">&#125;.main-inner &#123; </span><br><span class="line">    margin-top: 60px;</span><br><span class="line">    padding: 60px 60px 60px 60px;</span><br><span class="line">    background: #fff;</span><br><span class="line">    opacity: 0.9;</span><br><span class="line">    min-height: 500px;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>未来可能会设置标签云以及思维导图</p>
-</li>
+</ul>
+<ol start="6">
+<li>未来可能会设置标签云以及思维导图</li>
 </ol>
 
       
