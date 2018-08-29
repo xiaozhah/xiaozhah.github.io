@@ -127,7 +127,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/07/31/逐渐完善聚类效果的可视化/3.png">
 <meta property="og:image" content="http://yoursite.com/2018/07/31/逐渐完善聚类效果的可视化/4.png">
 <meta property="og:image" content="http://yoursite.com/2018/07/31/逐渐完善聚类效果的可视化/9ODYjH6C.png">
-<meta property="og:updated_time" content="2018-08-29T02:58:36.445Z">
+<meta property="og:updated_time" content="2018-08-29T03:00:42.573Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="逐渐完善聚类效果的可视化">
 <meta name="twitter:description" content="我的目标是可视化一个Embedding矩阵的聚类效果，但是矩阵极大，维数也高。 具体来说就是矩阵是一个矩阵维度是459753*32，每一行对应一个向量，代表单元对应的UnitVector；矩阵对应的标签是459753个，每一个标签记录当前单元对应的其他信息（例如单元的时长、单元所属类别、单元对应的音频文件名），其中最关注的是UnitVector与单元所属类别的关系">
@@ -407,7 +407,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-08-29 10:58:36" itemprop="dateModified" datetime="2018-08-29T10:58:36+08:00">2018-08-29</time>
+                <time title="Modified: 2018-08-29 11:00:42" itemprop="dateModified" datetime="2018-08-29T11:00:42+08:00">2018-08-29</time>
               
             
           </span>
@@ -511,7 +511,7 @@
 <h1 id="继续探索…"><a href="#继续探索…" class="headerlink" title="继续探索…"></a>继续探索…</h1><h2 id="比如离某音素最近的音素们是什么样的分布呢？"><a href="#比如离某音素最近的音素们是什么样的分布呢？" class="headerlink" title="比如离某音素最近的音素们是什么样的分布呢？"></a>比如离某音素最近的音素们是什么样的分布呢？</h2><p>用Mathematica来探索</p>
 <figure class="highlight mathematica"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">(*导入数据*)</span></span><br><span class="line">data = <span class="keyword">Partition</span>[</span><br><span class="line">   <span class="keyword">Import</span>[<span class="string">"/Users/xzhou/programming/Javascript/Vis-UnitVector/\</span></span><br><span class="line"><span class="string">Unit2Vec_UnitVector.dat"</span>, <span class="string">"Real32"</span>], <span class="number">32</span>];</span><br><span class="line">phones = <span class="keyword">Import</span>[</span><br><span class="line">    <span class="string">"/Users/xzhou/programming/Javascript/Vis-UnitVector/phone_name_\</span></span><br><span class="line"><span class="string">frame_id.csv"</span>, <span class="string">"Table"</span>][[<span class="keyword">All</span>, <span class="number">2</span>]];</span><br><span class="line"><span class="comment">(*构造最邻近对象，非常快的*)</span></span><br><span class="line">n = <span class="keyword">Nearest</span>[data];</span><br><span class="line"><span class="comment">(*建立vector-&gt;对应的索引的字典，也是为了加速运算，不需要每次求Position*)</span></span><br><span class="line">asso = Association[<span class="keyword">Thread</span>[data -&gt; <span class="keyword">Range</span>@<span class="keyword">Length</span>@data]];</span><br><span class="line"><span class="comment">(*画图，n[data[[i]], 1000]代表求1000近邻*)</span></span><br><span class="line"><span class="keyword">Grid</span>@<span class="keyword">Table</span>[<span class="keyword">Module</span>[&#123;nearps = phones[[asso[#]]] &amp; /@ n[data[[i]], 1000]&#125;,</span><br><span class="line">   &#123;phones[[i]], </span><br><span class="line">    BarChart[Tooltip[#[[2]], #[[1]]] &amp; /@ Normal[Counts[nearps]], </span><br><span class="line">     ColorFunction -&gt; "Rainbow", BarSpacing -&gt; &#123;0, 0&#125;, <span class="keyword">Frame</span> -&gt; <span class="keyword">False</span>,</span><br><span class="line">      <span class="keyword">Axes</span> -&gt; <span class="keyword">False</span>, <span class="keyword">BarOrigin</span> -&gt; <span class="keyword">Left</span>, <span class="keyword">ChartLayout</span> -&gt; <span class="string">"Stacked"</span>, </span><br><span class="line">     <span class="keyword">PlotRange</span> -&gt; &#123;All, &#123;.5, 1.5&#125;&#125;, <span class="keyword">AspectRatio</span> -&gt; <span class="number">1</span>/<span class="number">10</span>, </span><br><span class="line">     <span class="keyword">ImageSize</span> -&gt; <span class="number">500</span>]&#125;], &#123;i, RandomSample[Range@Length[data], 12]&#125;]</span><br></pre></td></tr></table></figure>
 <img src="/2018/07/31/逐渐完善聚类效果的可视化/9ODYjH6C.png">
-<p>可以看到不仅音素内部有时长的体现，音素之间聚类明细，音素的最近邻之间也是距离相近的音素</p>
+<p>可以看到不仅音素内部有时长的体现，音素之间聚类明细，音素的最近邻之间也是距离相近的音素,比如首尾静音sil附近是句内静音sp，辅音旁边是辅音等待 </p>
 
       
     </div>
