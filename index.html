@@ -332,6 +332,165 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/15/语音合成工具/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xzhou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/icon.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog of Xiao">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/09/15/语音合成工具/" itemprop="url">
+                  语音合成工具
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-09-15 21:08:33 / Modified: 21:13:11" itemprop="dateCreated datePublished" datetime="2018-09-15T21:08:33+08:00">2018-09-15</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/语音/" itemprop="url" rel="index"><span itemprop="name">语音</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <!-- toc -->
+<h1 id="生成上下文信息-linguistic-features"><a href="#生成上下文信息-linguistic-features" class="headerlink" title="生成上下文信息 linguistic features"></a>生成上下文信息 linguistic features</h1><p>根据fulllab文件夹和questions属性问题集回答得到linguistic，每个音句一个文件存储在fulllab_answers中<br><figure class="highlight perl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br></pre></td><td class="code"><pre><span class="line">$| = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">$labdir = <span class="string">"./labels/fulllab"</span>;</span><br><span class="line">$que    = <span class="string">"./edfiles/questions/questions.hed"</span>;</span><br><span class="line">$outdir = <span class="string">"./edfiles/questions/fulllab_answers"</span>;</span><br><span class="line"><span class="keyword">opendir</span> DIR, $labdir;</span><br><span class="line">$i = <span class="number">1</span>;</span><br><span class="line">Get_Ques2Regular($que);</span><br><span class="line"><span class="keyword">foreach</span> $_ ( <span class="keyword">readdir</span> DIR ) </span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">if</span> (<span class="regexp">/(.*)\.lab/</span>) </span><br><span class="line">  &#123;</span><br><span class="line">    $filename = $1;</span><br><span class="line">    <span class="keyword">print</span> $filename, <span class="string">"\t"</span>, <span class="string">"$i\n"</span>;</span><br><span class="line">    $i++;</span><br><span class="line">    $lab = <span class="keyword">sprintf</span>(<span class="string">"$labdir/$filename.lab"</span>);</span><br><span class="line">    $out = <span class="keyword">sprintf</span>(<span class="string">"$outdir/$filename.dat"</span>);</span><br><span class="line">    feature( $lab, $que, $out );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">closedir DIR;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">sub</span> <span class="title">Get_Ques2Regular</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">open</span>( question, <span class="string">"&lt;@_[0]"</span> ) <span class="keyword">or</span> <span class="keyword">die</span> <span class="string">"questions.hed can't be open"</span>;</span><br><span class="line">  %Ques2Regular;</span><br><span class="line">  <span class="keyword">while</span> ( $line_question = &lt;question&gt; )</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">if</span> ( $line_question eq <span class="string">"\n"</span> ) </span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">next</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span> </span><br><span class="line">    &#123;</span><br><span class="line">     <span class="keyword">if</span> ( $line_question =~ <span class="regexp">/\&#123;(.*)\&#125;/</span> ) </span><br><span class="line">      &#123;</span><br><span class="line">        @phoneall = <span class="keyword">split</span>( <span class="regexp">/,/</span>, $1 );</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">foreach</span> $phoneone (@phoneall) </span><br><span class="line">      &#123;</span><br><span class="line">        $original_phoneone = $phoneone;</span><br><span class="line">        $phoneone =~ <span class="regexp">s/\*/\.\*/g</span>;    <span class="comment">#(*-&gt;.*)</span></span><br><span class="line">        $phoneone =~ <span class="regexp">s/\?/\./g</span>;      <span class="comment">#(?-&gt;. )</span></span><br><span class="line">        $phoneone =~ <span class="regexp">s/\$/\\\$/g</span>;    <span class="comment">#($-&gt;\$)</span></span><br><span class="line">        $phoneone =~ <span class="regexp">s/\@/\\\@/g</span>;    <span class="comment">#(@-&gt;\@)</span></span><br><span class="line">        $phoneone =~ <span class="regexp">s/\+/\\\+/g</span>;    <span class="comment">#(+-&gt;\+)</span></span><br><span class="line">        $phoneone =~ <span class="regexp">s/\|/\\\|/g</span>;    <span class="comment">#(|-&gt;\|)</span></span><br><span class="line">        $phoneone =~ <span class="regexp">s/\^/\\\^/g</span>;    <span class="comment">#(^-&gt;\^)</span></span><br><span class="line">        <span class="comment">#(^-&gt;\^) add ^ in the beginning of the line if there is a character</span></span><br><span class="line">        $phoneone =~ <span class="regexp">s/^([a-z])/\^$1/</span>;</span><br><span class="line">        $Ques2Regular&#123;$original_phoneone&#125; = $phoneone <span class="keyword">unless</span> <span class="keyword">exists</span> $Ques2Regular&#123;$original_phoneone&#125;;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">close</span>(question);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">sub</span> <span class="title">feature</span> </span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">  <span class="keyword">open</span>( label,    <span class="string">"&lt;@_[0]"</span> ) <span class="keyword">or</span> <span class="keyword">die</span> <span class="string">"00000001.lab can't be open"</span>;</span><br><span class="line">  <span class="keyword">open</span>( question, <span class="string">"&lt;@_[1]"</span> ) <span class="keyword">or</span> <span class="keyword">die</span> <span class="string">"questions.hed can't be open"</span>;</span><br><span class="line">  <span class="keyword">open</span>( output,   <span class="string">"&gt;@_[2]"</span> ) <span class="keyword">or</span> <span class="keyword">die</span> <span class="string">"output.txt is null"</span>;</span><br><span class="line">  <span class="keyword">binmode</span> output;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">while</span> ( $line_label = &lt;label&gt; ) </span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">seek</span> question, <span class="number">0</span>, <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> ( $line_question = &lt;question&gt; ) </span><br><span class="line">    &#123;</span><br><span class="line">      <span class="keyword">if</span> ( $line_question eq <span class="string">"\n"</span> ) </span><br><span class="line">      &#123;</span><br><span class="line">          <span class="keyword">next</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">else</span> &#123;</span><br><span class="line">          <span class="keyword">if</span> ( $line_question =~ <span class="regexp">/\&#123;(.*)\&#125;/</span> ) </span><br><span class="line">          &#123;</span><br><span class="line">              @phoneall = <span class="keyword">split</span>( <span class="regexp">/,/</span>, $1 );</span><br><span class="line">          &#125;</span><br><span class="line">          $temp = <span class="number">0</span>;</span><br><span class="line">          <span class="keyword">foreach</span> $phoneone (@phoneall) </span><br><span class="line">          &#123;</span><br><span class="line">              $phoneone = $Ques2Regular&#123;$phoneone&#125;;</span><br><span class="line">              <span class="keyword">if</span> ( $line_label =~ <span class="regexp">/$phoneone/</span> ) </span><br><span class="line">              &#123;</span><br><span class="line">                  <span class="comment">#print "$phoneone\t$line_label\t$line_question\n";</span></span><br><span class="line">                  $temp = <span class="number">1</span>;</span><br><span class="line">                  <span class="keyword">print</span> output <span class="keyword">pack</span>( <span class="string">"f"</span>, <span class="number">1</span> );</span><br><span class="line">                  <span class="keyword">last</span>;</span><br><span class="line">              &#125;</span><br><span class="line">          &#125;</span><br><span class="line">          <span class="keyword">if</span> ( $temp == <span class="number">0</span> ) </span><br><span class="line">          &#123;</span><br><span class="line">              <span class="keyword">print</span> output <span class="keyword">pack</span>( <span class="string">"f"</span>, <span class="number">0</span> );</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="keyword">close</span>(label);</span><br><span class="line">  <span class="keyword">close</span>(question);</span><br><span class="line">  <span class="keyword">close</span>(output);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="Stright工具"><a href="#Stright工具" class="headerlink" title="Stright工具"></a>Stright工具</h1>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/10/强化学习/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1870,181 +2029,6 @@ xvfb-run wolfram</code><br>此时运行这个代码就正常了</p>
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/26/Tensorflow/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="xzhou">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/icon.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Blog of Xiao">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/07/26/Tensorflow/" itemprop="url">
-                  Tensorflow
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2018-07-26 21:35:02" itemprop="dateCreated datePublished" datetime="2018-07-26T21:35:02+08:00">2018-07-26</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2018-09-13 19:15:26" itemprop="dateModified" datetime="2018-09-13T19:15:26+08:00">2018-09-13</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/机器学习/" itemprop="url" rel="index"><span itemprop="name">机器学习</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <!-- toc -->
-<h1 id="Keras与Tensorflow联动"><a href="#Keras与Tensorflow联动" class="headerlink" title="Keras与Tensorflow联动"></a>Keras与Tensorflow联动</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line"><span class="keyword">from</span> tensorflow.examples.tutorials.mnist <span class="keyword">import</span> input_data</span><br><span class="line"></span><br><span class="line">mnist_data = input_data.read_data_sets(<span class="string">'MNIST_data/'</span>, one_hot=<span class="keyword">True</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># Building model</span></span><br><span class="line">img = tf.placeholder(tf.float32, shape=(<span class="keyword">None</span>, <span class="number">784</span>))</span><br><span class="line">labels = tf.placeholder(tf.float32, shape=(<span class="keyword">None</span>, <span class="number">10</span>))</span><br><span class="line"></span><br><span class="line">x = tf.keras.layers.Dense(<span class="number">128</span>, activation=<span class="string">'relu'</span>)(img)</span><br><span class="line">x = tf.keras.layers.Dense(<span class="number">128</span>, activation=<span class="string">'relu'</span>)(x)</span><br><span class="line">prediction = tf.keras.layers.Dense(<span class="number">10</span>)(x)</span><br><span class="line"></span><br><span class="line">loss = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=prediction, labels=labels))</span><br><span class="line">train_optim = tf.train.AdamOptimizer().minimize(loss)</span><br><span class="line"></span><br><span class="line"><span class="comment">#Print model name and shape</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> tf.trainable_variables():</span><br><span class="line">    <span class="keyword">print</span> <span class="string">'&#123;&#125;\t&#123;&#125;\t&#123;&#125;'</span>.format(i.name,i.shape,i.dtype)</span><br><span class="line"><span class="comment">#dense/kernel:0 (784, 128)  &lt;dtype: 'float32_ref'&gt;</span></span><br><span class="line"><span class="comment">#dense/bias:0   (128,)  &lt;dtype: 'float32_ref'&gt;</span></span><br><span class="line"><span class="comment">#dense_1/kernel:0   (128, 128)  &lt;dtype: 'float32_ref'&gt;</span></span><br><span class="line"><span class="comment">#dense_1/bias:0 (128,)  &lt;dtype: 'float32_ref'&gt;</span></span><br><span class="line"><span class="comment">#dense_2/kernel:0   (128, 10)   &lt;dtype: 'float32_ref'&gt;</span></span><br><span class="line"><span class="comment">#dense_2/bias:0 (10,)   &lt;dtype: 'float32_ref'&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Train model</span></span><br><span class="line"><span class="keyword">with</span> tf.Session() <span class="keyword">as</span> sess:</span><br><span class="line">    init = tf.global_variables_initializer()</span><br><span class="line">    sess.run(init)</span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> range(<span class="number">1000</span>):</span><br><span class="line">        batch_x, batch_y = mnist_data.train.next_batch(<span class="number">50</span>)</span><br><span class="line">        sess.run(train_optim, feed_dict=&#123;img: batch_x, labels: batch_y&#125;)</span><br><span class="line">        acc_pred = tf.keras.metrics.categorical_accuracy(labels, prediction)</span><br><span class="line">        pred = sess.run(acc_pred, feed_dict=&#123;labels: mnist_data.test.labels, img: mnist_data.test.images&#125;)</span><br><span class="line">        print(<span class="string">'accuracy: %.3f'</span> % (sum(pred)/len(mnist_data.test.labels)))</span><br></pre></td></tr></table></figure>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/07/26/Tensorflow/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -2096,7 +2080,7 @@ xvfb-run wolfram</code><br>此时运行这个代码就正常了</p>
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-count">15</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -2123,7 +2107,9 @@ xvfb-run wolfram</code><br>此时运行这个代码就正常了</p>
                     
                       
                     
-                    <span class="site-state-item-count">7</span>
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -2182,7 +2168,11 @@ xvfb-run wolfram</code><br>此时运行这个代码就正常了</p>
                     
                       
                     
-                    <span class="site-state-item-count">23</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">25</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
