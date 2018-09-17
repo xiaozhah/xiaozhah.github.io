@@ -124,7 +124,7 @@
 <meta property="og:image" content="http://yoursite.com/2018/07/26/Python/5.jpg">
 <meta property="og:image" content="http://yoursite.com/2018/07/26/Python/4.gif">
 <meta property="og:image" content="http://yoursite.com/2018/07/26/Python/6.png">
-<meta property="og:updated_time" content="2018-09-16T03:34:22.223Z">
+<meta property="og:updated_time" content="2018-09-17T13:20:33.933Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python">
 <meta name="twitter:description" content="使用中文# -*- coding: utf-8 -*- 告诉Python解释器，用UTF-8编码读取源代码print u&amp;#39;中文&amp;#39;  u表示Unicode字符串 Python说明Python代码的缩进规则说：最好使用4个空格ipython --pylab 导入了numpy(np) 和 matplotlib">
@@ -404,7 +404,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-09-16 11:34:22" itemprop="dateModified" datetime="2018-09-16T11:34:22+08:00">2018-09-16</time>
+                <time title="Modified: 2018-09-17 21:20:33" itemprop="dateModified" datetime="2018-09-17T21:20:33+08:00">2018-09-17</time>
               
             
           </span>
@@ -554,7 +554,10 @@
 <li>type(round(12.3))是float类型</li>
 <li>x[a:a+N]实际上x的长度就是N  x[:a]+x[a:]==x</li>
 <li>0 % N == 0.0 (N != 0) </li>
-<li>普通数组是地址传递<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">a = np.arange(<span class="number">10</span>)</span><br><span class="line">b = a[<span class="number">3</span>:<span class="number">6</span>]</span><br><span class="line">b[<span class="number">2</span>] = <span class="number">1000</span></span><br><span class="line"><span class="comment"># a竟然被b改变了，注意</span></span><br><span class="line"><span class="keyword">print</span> <span class="string">"a is "</span>+ str(a)  <span class="comment">#a is [ 0 1 2 3 4 1000 6 7 8 9] </span></span><br><span class="line"><span class="keyword">print</span> <span class="string">"b is "</span>+ str(b)  <span class="comment">#b is [ 3 4 1000]</span></span><br></pre></td></tr></table></figure>
+<li><p>普通数组是地址传递</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">a = np.arange(<span class="number">10</span>)</span><br><span class="line">b = a[<span class="number">3</span>:<span class="number">6</span>]</span><br><span class="line">b[<span class="number">2</span>] = <span class="number">1000</span></span><br><span class="line"><span class="comment"># a竟然被b改变了，注意</span></span><br><span class="line"><span class="keyword">print</span> <span class="string">"a is "</span>+ str(a)  <span class="comment">#a is [ 0 1 2 3 4 1000 6 7 8 9] </span></span><br><span class="line"><span class="keyword">print</span> <span class="string">"b is "</span>+ str(b)  <span class="comment">#b is [ 3 4 1000]</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>numpy的std与Mathematica、Matlab不同<br>设置<code>np.std(lis,ddof=1)</code>即相同。原因在于方差是除以样本长度N(numpy默认)，还是N-1（mathematica 无偏估计）。</p>
 </li>
 </ol>
 <h1 id="python系统管理相关"><a href="#python系统管理相关" class="headerlink" title="python系统管理相关"></a>python系统管理相关</h1><h2 id="查看python安装目录"><a href="#查看python安装目录" class="headerlink" title="查看python安装目录"></a>查看python安装目录</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line">path = sys.executable</span><br><span class="line">print(path)</span><br></pre></td></tr></table></figure>
