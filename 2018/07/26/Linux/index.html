@@ -117,7 +117,7 @@
 <meta property="og:description" content="命令行指令Linux要查看所有和pdf相关的命令 可以输入pdf 再按Tab键 目录 ls -l看当前目录下文件的基本属性 ls -a看隐藏文件 tree可以看到目录树结构 删除文件夹 rm -rf xxx sshfs xzhou@172.16.46.88:/home/xzhou/project 88_mount/将远程服务器88的文件夹/home/xzhou/project挂载到本机的88_m">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/07/26/Linux/1.png">
-<meta property="og:updated_time" content="2018-09-21T02:08:32.648Z">
+<meta property="og:updated_time" content="2018-10-06T01:48:26.683Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux">
 <meta name="twitter:description" content="命令行指令Linux要查看所有和pdf相关的命令 可以输入pdf 再按Tab键 目录 ls -l看当前目录下文件的基本属性 ls -a看隐藏文件 tree可以看到目录树结构 删除文件夹 rm -rf xxx sshfs xzhou@172.16.46.88:/home/xzhou/project 88_mount/将远程服务器88的文件夹/home/xzhou/project挂载到本机的88_m">
@@ -397,7 +397,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-09-21 10:08:32" itemprop="dateModified" datetime="2018-09-21T10:08:32+08:00">2018-09-21</time>
+                <time title="Modified: 2018-10-06 09:48:26" itemprop="dateModified" datetime="2018-10-06T09:48:26+08:00">2018-10-06</time>
               
             
           </span>
@@ -534,7 +534,7 @@
 <h3 id="后台下载视频"><a href="#后台下载视频" class="headerlink" title="后台下载视频"></a>后台下载视频</h3><p>如果现在很多个b站视频需要下载，是不是就是CTRL + Z and fg 结合 youtube-dl，实践发现不行，挂起时下载会暂停。之前我玩过树莓派，很多Linux知识都是从那里学到的</p>
 <p>所以我发现了screen命令. MacOS是自带的,Linux使用<code>sudo apt-get install screen</code>安装</p>
 <p>终端输入（Xshell软件里操作一样的）:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen youtube-dl --extract-audio --audio-format mp3 https://www.bilibili.com/video/av6846882</span><br></pre></td></tr></table></figure></p>
-<p>它会下载第一个视频，这时候按住<kbd>Ctrl</kbd>+<kbd>A</kbd>+<kbd>D</kbd>会回到终端，但是视频依然在下载，这时候再次终端输出新的视频PID，就会下载第二个，以此类推…</p>
+<p>它会下载第一个视频，这时候按住<kbd>Ctrl</kbd>+<kbd>A</kbd>然后<kbd>Ctrl</kbd>+<kbd>D</kbd>会回到终端，但是视频依然在下载，这时候再次终端输出新的视频PID，就会下载第二个，以此类推…</p>
 <p>查看所以任务是<code>screen -ls</code>,所有视频一旦完成下载，<code>screen -ls</code>就会输出<code>No Sockets found in bilibala...</code>。说明一个任务完成它会自动退出那个虚拟终端的</p>
 <p>如果我们关闭终端不影响screen，不信你重新打开终端试试<code>screen -ls</code></p>
 <p>恢复一个虚拟终端命令是<code>screen -r ID号</code></p>
