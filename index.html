@@ -1615,7 +1615,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-10-18 13:10:05" itemprop="dateModified" datetime="2018-10-18T13:10:05+08:00">2018-10-18</time>
+                <time title="Modified: 2018-10-20 09:58:10" itemprop="dateModified" datetime="2018-10-20T09:58:10+08:00">2018-10-20</time>
               
             
           </span>
@@ -1668,11 +1668,12 @@
       
         
           <!-- toc -->
-<h1 id="MXNet环境指南"><a href="#MXNet环境指南" class="headerlink" title="MXNet环境指南"></a>MXNet环境指南</h1><ol>
+<h1 id="MXNet基本指南"><a href="#MXNet基本指南" class="headerlink" title="MXNet基本指南"></a>MXNet基本指南</h1><ol>
 <li><p>打开mxnet <code>source activate gluon # 注意Windows下不需要 source</code><br>退出环境 <code>source deactivate</code></p>
 </li>
 <li><p>GPU版本进入环境后如果用指定的卡可以 <code>CUDA_VISIBLE_DEVICES=2 python</code>，这样数据只能分配在一个GPU上</p>
 </li>
+<li>可以尝试将数据全部放进内存，如果是不规则数据集，numpy处理不了可以用python自带的数组处理</li>
 </ol>
           <!--noindex-->
           <div class="post-button text-center">
