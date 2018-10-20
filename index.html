@@ -1974,7 +1974,7 @@ xvfb-run wolfram</code><br>此时运行这个代码就正常了</p>
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-10-20 10:25:28" itemprop="dateModified" datetime="2018-10-20T10:25:28+08:00">2018-10-20</time>
+                <time title="Modified: 2018-10-20 10:34:12" itemprop="dateModified" datetime="2018-10-20T10:34:12+08:00">2018-10-20</time>
               
             
           </span>
@@ -2028,7 +2028,10 @@ xvfb-run wolfram</code><br>此时运行这个代码就正常了</p>
         
           <!-- toc -->
 <h1 id="Tensorflow基本指南"><a href="#Tensorflow基本指南" class="headerlink" title="Tensorflow基本指南"></a>Tensorflow基本指南</h1><ol>
-<li>使用Anaconda安装，运行更快，参见
+<li>使用Anaconda安装，运行更快，参见</li>
+<li>会话注册<code>sess=tf.InteractivateSession()</code><br>表示将是这个创建的session作为随后默认的session，之后的运行也运算也在这里面进行</li>
+<li>列出当前每个节点使用的device，使用的是<code>tf.Session(config=tf.ConfigProto(log_device_placement=True))</code></li>
+</ol>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/07/26/Tensorflow/#more" rel="contents">
