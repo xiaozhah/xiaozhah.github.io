@@ -117,7 +117,7 @@
 <meta property="og:description" content="命令行指令Linux要查看所有和pdf相关的命令 可以输入pdf 再按Tab键 目录 ls -l看当前目录下文件的基本属性 ls -a看隐藏文件 tree可以看到目录树结构 删除文件夹 rm -rf xxx sshfs xzhou@172.16.46.88:/home/xzhou/project 88_mount/将远程服务器88的文件夹/home/xzhou/project挂载到本机的88_m">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/07/26/Linux/1.png">
-<meta property="og:updated_time" content="2018-12-03T14:20:21.616Z">
+<meta property="og:updated_time" content="2018-12-08T03:53:43.336Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux">
 <meta name="twitter:description" content="命令行指令Linux要查看所有和pdf相关的命令 可以输入pdf 再按Tab键 目录 ls -l看当前目录下文件的基本属性 ls -a看隐藏文件 tree可以看到目录树结构 删除文件夹 rm -rf xxx sshfs xzhou@172.16.46.88:/home/xzhou/project 88_mount/将远程服务器88的文件夹/home/xzhou/project挂载到本机的88_m">
@@ -444,7 +444,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-12-03 22:20:21" itemprop="dateModified" datetime="2018-12-03T22:20:21+08:00">2018-12-03</time>
+                <time title="Modified: 2018-12-08 11:53:43" itemprop="dateModified" datetime="2018-12-08T11:53:43+08:00">2018-12-08</time>
               
             
           </span>
@@ -513,6 +513,8 @@
 <li><code>fusermount</code>是一个很有用的指令，如果挂载不成功就用这个指令取消挂载。但是偶尔会无法取消，显示device is busy，原因就是有进程占着这个文件夹。那么需要先<code>ps aux|grep xzhou</code>找到自己的进程看看什么与此相关，然后<code>kill -s 9 PROCESS_ID</code>，然后再取消挂载。</li>
 <li>当然也可以挂载其他服务器的anaconda(这时候注意源文件夹和目标文件夹的名字一致，考虑到不想修改环境变量)，但是注意首先需要将本地的<code>~/.bashrc</code>文件注释掉conda部分再source指令，然后再挂载（不然会出现无响应），再取消注释再source指令</li>
 <li><code>ln -s /tmp/test1.txt test2.txt</code> 将在当前目录下创建符号文件“test2.txt”，<code>ln -s /tmp/test1.txt</code> 将在当前目录下创建符号文件“test1.txt”。删除链接符号文件语法是<code>rm file</code>或者<code>rm dir</code></li>
+<li>bz2文件解压缩：压缩：<code>bzip2 file</code> 解压：<code>bzip2 -dk file.bz2</code>。-d表示解压，-k表示不删除源文件</li>
+<li><code>cat std_std_wiki.txt|grep --color=always -n &#39;query&#39;|less -R</code> 显示 查询的结构</li>
 </ul>
 <h1 id="Mac对应Windows的按键"><a href="#Mac对应Windows的按键" class="headerlink" title="Mac对应Windows的按键"></a>Mac对应Windows的按键</h1><p><kbd>Command (or Cmd) ⌘</kbd><br><kbd>Shift ⇧</kbd><br><kbd>Option (or Alt) ⌥</kbd><br><kbd>Control (or Ctrl) ⌃</kbd><br><kbd>Caps Lock ⇪</kbd> </p>
 <a id="more"></a>
