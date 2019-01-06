@@ -117,7 +117,7 @@
 <meta property="og:description" content="命令行指令Linux要查看所有和pdf相关的命令 可以输入pdf 再按Tab键  ls -l看当前目录下文件的基本属性 ls -a看隐藏文件 tree可以看到目录树结构 删除文件夹 rm -rf xxx sshfs xzhou@172.16.46.88:/home/xzhou/project 88_mount/将远程服务器88的文件夹/home/xzhou/project挂载到本机的88_mou">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/07/26/Linux/1.png">
-<meta property="og:updated_time" content="2019-01-06T02:04:12.207Z">
+<meta property="og:updated_time" content="2019-01-06T02:07:43.693Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux">
 <meta name="twitter:description" content="命令行指令Linux要查看所有和pdf相关的命令 可以输入pdf 再按Tab键  ls -l看当前目录下文件的基本属性 ls -a看隐藏文件 tree可以看到目录树结构 删除文件夹 rm -rf xxx sshfs xzhou@172.16.46.88:/home/xzhou/project 88_mount/将远程服务器88的文件夹/home/xzhou/project挂载到本机的88_mou">
@@ -444,7 +444,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-01-06 10:04:12" itemprop="dateModified" datetime="2019-01-06T10:04:12+08:00">2019-01-06</time>
+                <time title="Modified: 2019-01-06 10:07:43" itemprop="dateModified" datetime="2019-01-06T10:07:43+08:00">2019-01-06</time>
               
             
           </span>
@@ -609,13 +609,7 @@
 <blockquote>
 <p>libgcc_s_seh-1.dll  libgfortran-3.dll  libmxnet.dll  libopenblas.dll  libquadmath-0.dll</p>
 </blockquote>
-<p>在Linux上直接执行报错，说是某个函数有未实现的函数</p>
-<blockquote>
-<p>wine: Call from 0x7b44cbda to unimplemented function vcomp140.dll._vcomp_for_static_simple_init_i8, aborting)</p>
-</blockquote>
-<p>我是用VS2015编译的嘛所以wine的可能在vc运行时的版本低了，需要更新。它会下载原生vcomp140.dll然后更新覆盖</p>
-<p>终端执行<code>winetricks -q vcrun2015</code>。</p>
-<p>如果是用ssh连上的没有图形界面的话，需要使用<code>xvfb-run winetricks -q vcrun2015</code>,让Linux模拟一个桌面。。。</p>
+<p>在Linux上直接执行报错，说是某个函数有未实现的函数(wine: Call from 0x7b44cbda to unimplemented function vcomp140.dll._vcomp_for_static_simple_init_i8, aborting)<br>我是用VS2015编译的嘛所以wine的可能在vc运行时的版本低了，需要更新。它会下载原生vcomp140.dll然后更新覆盖<br>终端执行<code>winetricks -q vcrun2015</code>。<br>如果是用ssh连上的没有图形界面的话，需要使用<code>xvfb-run winetricks -q vcrun2015</code>,让Linux模拟一个桌面(需要安装xvfb软件)(话说我是在用无图形界面的mathematica导出图形有问题时知道的)</p>
 
       
     </div>
