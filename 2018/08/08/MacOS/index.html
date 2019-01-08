@@ -116,7 +116,7 @@
 <meta property="og:site_name" content="Blog of Xiao">
 <meta property="og:description" content="我以前舍友叫我机器杀手，我也没有白白浪费这个称号。以前用实验室电脑(windows)的时候，一个月重装过四次，每次都能把电脑给弄成蓝屏，无法开机。之后装在戴尔xps13上的Ubuntu一次插拔U盘把笔记本的主板给烧了。。。后来就有了这台 Mac pro（13寸带Touchbar的版本），看看这个系统能不能经过能不能经过我的摧残还能保持完好😅 目前来看，自从6月中旬入手以来，Mac使用良好。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-06T01:55:11.748Z">
+<meta property="og:updated_time" content="2019-01-08T04:34:23.765Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MacOS">
 <meta name="twitter:description" content="我以前舍友叫我机器杀手，我也没有白白浪费这个称号。以前用实验室电脑(windows)的时候，一个月重装过四次，每次都能把电脑给弄成蓝屏，无法开机。之后装在戴尔xps13上的Ubuntu一次插拔U盘把笔记本的主板给烧了。。。后来就有了这台 Mac pro（13寸带Touchbar的版本），看看这个系统能不能经过能不能经过我的摧残还能保持完好😅 目前来看，自从6月中旬入手以来，Mac使用良好。">
@@ -442,7 +442,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-10-06 09:55:11" itemprop="dateModified" datetime="2018-10-06T09:55:11+08:00">2018-10-06</time>
+                <time title="Modified: 2019-01-08 12:34:23" itemprop="dateModified" datetime="2019-01-08T12:34:23+08:00">2019-01-08</time>
               
             
           </span>
@@ -511,6 +511,7 @@
 <h2 id="办公软件"><a href="#办公软件" class="headerlink" title="办公软件"></a>办公软件</h2><p>有微软的Office,兼容性没问题，比苹果自带的Pages兼容性肯定强。因为文章一般Latex写，word等用的简单，目前没问题。</p>
 <h2 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h2><p>当然是Chrome，各种插件<br>油猴插件配合百度云就是快</p>
 <h2 id="终端"><a href="#终端" class="headerlink" title="终端"></a>终端</h2><p>可以用screen后台执行终端任务<br>另外<kbd>⌘</kbd>+<kbd>D</kbd>是终端分屏，<kbd>⇧</kbd>+<kbd>⌘</kbd>+<kbd>D</kbd>关闭</p>
+<h3 id="美化"><a href="#美化" class="headerlink" title="美化"></a>美化</h3><p>安装zsh<br>拷贝代码至~/.bash_profile然后<code>source ~/.bash_profile</code><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">#export PS1=&apos;\[\e[32m\][\u@\w#]\$\[\e[m\]&apos;</span><br><span class="line"></span><br><span class="line">#Make Terminal more beautiful</span><br><span class="line">export CLICOLOR=1</span><br><span class="line">export LSCOLORS=ExFxCxDxBxegedabagacad</span><br><span class="line"></span><br><span class="line">#Network</span><br><span class="line">alias proxy=&quot;export http_proxy=http://192.168.2.102:41493;export https_proxy=http://192.168.2.102:41493&quot;</span><br><span class="line">alias unproxy=&quot;unset proxy&quot;</span><br><span class="line">alias ip=&quot;curl http://ip.cn&quot;</span><br><span class="line"></span><br><span class="line">#iCloud</span><br><span class="line">alias icloud=&quot;cd ~/Library/Mobile\ Documents/com~apple~CloudDocs&quot;</span><br><span class="line"></span><br><span class="line">#RepairAu</span><br><span class="line">alias repairAu=&quot;cd /private/var/folders/jj/bg7147vx1cqgzdzft1sn25sm0000gn/T/TemporaryItems/;mkdir -p Adobe/Audition/10.0;cd -&quot;</span><br><span class="line"></span><br><span class="line">#Run tf environment</span><br><span class="line">alias tf=&quot;source activate tensorflow&quot;</span><br><span class="line">alias mx=&quot;source activate gluon&quot;</span><br><span class="line"></span><br><span class="line"># added by Anaconda2 installer</span><br><span class="line">export PATH=&quot;/Users/xzhou/anaconda2/bin:$PATH&quot;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -768,7 +769,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#下载工具"><span class="nav-number">1.</span> <span class="nav-text">下载工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#办公软件"><span class="nav-number">2.</span> <span class="nav-text">办公软件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浏览器"><span class="nav-number">3.</span> <span class="nav-text">浏览器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#终端"><span class="nav-number">4.</span> <span class="nav-text">终端</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#下载工具"><span class="nav-number">1.</span> <span class="nav-text">下载工具</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#办公软件"><span class="nav-number">2.</span> <span class="nav-text">办公软件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浏览器"><span class="nav-number">3.</span> <span class="nav-text">浏览器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#终端"><span class="nav-number">4.</span> <span class="nav-text">终端</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#美化"><span class="nav-number">4.1.</span> <span class="nav-text">美化</span></a></li></ol></li></ol></div>
             
 
           </div>

@@ -117,7 +117,7 @@
 <meta property="og:description" content="命令行指令Linux要查看所有和pdf相关的命令 可以输入pdf 再按Tab键 目录 ls -l看当前目录下文件的基本属性 ls -a看隐藏文件 ls|wc -l查看当前目录下文件+文件夹数 ls -l|grep ^d|wc -l显示当前目录文件夹数 ls -l|grep ^-|wc -l显示当前目录文件数 ls|gawk -F. &amp;#39;{print $2}&amp;#39;|sort -u得到后缀">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/07/26/Linux/1.png">
-<meta property="og:updated_time" content="2019-01-08T04:25:31.735Z">
+<meta property="og:updated_time" content="2019-01-08T04:29:08.711Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux">
 <meta name="twitter:description" content="命令行指令Linux要查看所有和pdf相关的命令 可以输入pdf 再按Tab键 目录 ls -l看当前目录下文件的基本属性 ls -a看隐藏文件 ls|wc -l查看当前目录下文件+文件夹数 ls -l|grep ^d|wc -l显示当前目录文件夹数 ls -l|grep ^-|wc -l显示当前目录文件数 ls|gawk -F. &amp;#39;{print $2}&amp;#39;|sort -u得到后缀">
@@ -444,7 +444,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-01-08 12:25:31" itemprop="dateModified" datetime="2019-01-08T12:25:31+08:00">2019-01-08</time>
+                <time title="Modified: 2019-01-08 12:29:08" itemprop="dateModified" datetime="2019-01-08T12:29:08+08:00">2019-01-08</time>
               
             
           </span>
@@ -516,7 +516,7 @@
 <h2 id="压缩"><a href="#压缩" class="headerlink" title="压缩"></a>压缩</h2><ul>
 <li>bz2文件解压缩：压缩：<code>bzip2 file</code> 解压：<code>bzip2 -dk file.bz2</code>。-d表示解压，-k表示不删除源文件</li>
 <li>rar文件解压缩：压缩目录：<code>rar a test ./script/</code>，查看压缩包文件内容是：<code>rar l test.rar</code>，解压：<code>unrar e test.rar ./script/</code></li>
-<li>tar文件（默认）：压缩目录：<code>tar -cvf test.tar ./test</code>，解压：<code>tar -xvf test.tar</code></li>
+<li>tar文件：压缩目录：<code>tar -cvf test.tar ./test</code>，解压：<code>tar -xvf test.tar</code></li>
 <li>zip：压缩目录：<code>zip -r test.zip ./test</code>，解压：<code>unzip test.zip</code></li>
 </ul>
 <h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
@@ -535,7 +535,7 @@
 <li>Linux系统中的<strong>wc</strong>(Word Count)命令的功能为统计指定文件中的字节数、字数、行数，并将统计结果显示输出</li>
 </ul>
 <h3 id="PDF相关"><a href="#PDF相关" class="headerlink" title="PDF相关"></a>PDF相关</h3><h4 id="PDF-gt-TXT"><a href="#PDF-gt-TXT" class="headerlink" title="PDF-&gt;TXT"></a>PDF-&gt;TXT</h4><p>pdftotext可以得到pdf对应的纯文本版本</p>
-<h4 id="字体嵌入"><a href="#字体嵌入" class="headerlink" title="字体嵌入"></a>字体嵌入</h4><p>强制字体嵌入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pdf2ps template.pdf</span><br><span class="line">ps2pdf -dPDFSETTINGS=/prepress template.ps file.pdf</span><br></pre></td></tr></table></figure></p>
+<h4 id="字体嵌入"><a href="#字体嵌入" class="headerlink" title="字体嵌入"></a>字体嵌入</h4><p>会议提交论文要求PDF字体嵌入<br>强制字体嵌入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pdf2ps template.pdf</span><br><span class="line">ps2pdf -dPDFSETTINGS=/prepress template.ps template.pdf</span><br></pre></td></tr></table></figure></p>
 <p>验证：<code>pdffonts template.pdf</code><br>可以看到所有字体已被嵌入<br><img src="/2018/07/26/Linux/1.png"></p>
 <h4 id="显示PDF信息-MacOS"><a href="#显示PDF信息-MacOS" class="headerlink" title="显示PDF信息 (MacOS)"></a>显示PDF信息 (MacOS)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew install xpdf</span><br><span class="line">pdfinfo test.pdf</span><br></pre></td></tr></table></figure>
 <h4 id="PDF修改作者等metadata-MacOS"><a href="#PDF修改作者等metadata-MacOS" class="headerlink" title="PDF修改作者等metadata (MacOS)"></a>PDF修改作者等metadata (MacOS)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew install exiftool</span><br><span class="line">exiftool -Title=&quot;Change This Title&quot; -Subject=&quot;Fun and PDF&quot; change_my_meta.pdf</span><br></pre></td></tr></table></figure>
@@ -553,7 +553,10 @@
 <h3 id="增加用户"><a href="#增加用户" class="headerlink" title="增加用户"></a>增加用户</h3><p>先登录root用户</p>
 <ol>
 <li>adduser xzhou</li>
-<li>passwd xzhou 似乎不需要 因为第一步输入了密码<br>增加网络资源共享文件夹</li>
+<li>passwd xzhou 似乎不需要 因为第一步输入了密码</li>
+</ol>
+<p>增加网络资源共享文件夹</p>
+<ol start="3">
 <li>sudo nano /etc/samba/smb.conf</li>
 <li>sudo smbpasswd -a xzhou</li>
 <li>sudo service smbd restart</li>
@@ -574,7 +577,7 @@
 </ul>
 <h1 id="远程控制"><a href="#远程控制" class="headerlink" title="远程控制"></a>远程控制</h1><h2 id="安装VNC-server"><a href="#安装VNC-server" class="headerlink" title="安装VNC-server"></a>安装VNC-server</h2><p><code>ps -ef|grep -i vnc</code> 查看正在运行的vncserver的进程<br><code>vncserver -kill :1</code>      #关闭这个连接<br><code>vncserver :1</code> 重启vncserver</p>
 <h2 id="安装teamviewer或xrdp"><a href="#安装teamviewer或xrdp" class="headerlink" title="安装teamviewer或xrdp"></a>安装teamviewer或xrdp</h2><h1 id="美化和汉化man"><a href="#美化和汉化man" class="headerlink" title="美化和汉化man"></a>美化和汉化man</h1><h2 id="汉化"><a href="#汉化" class="headerlink" title="汉化"></a>汉化</h2><ol>
-<li><code>sudo apt-get install sudo !!-zh</code></li>
+<li><code>sudo apt-get install sudo !!-zh</code>???</li>
 <li>查看man 手册安装到哪里，<code>dpkg -L manpages-zh | less</code><br>查看到安装在/usr/share/man/zh_CN</li>
 <li>设一个中文man别名,     修改 ~/.bashrc 添加一个alias :<br><code>alias cman=&#39;man -M /usr/share/man/zh_CN&#39;</code>，或者用命令<code>sed -i &#39;$a alias cman=&quot;man -M /usr/share/man/zh_CN&quot;&#39; .bashrc</code>(在最后一行后增加一行，并写入文件)</li>
 <li><code>source ~/.bashrc</code> 重启终端 <code>cman ls</code>就是汉化的man，<code>man ls</code>就是英文的man<br>##美化</li>
