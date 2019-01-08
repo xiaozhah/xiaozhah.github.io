@@ -579,7 +579,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-01-08 12:16:43" itemprop="dateModified" datetime="2019-01-08T12:16:43+08:00">2019-01-08</time>
+                <time title="Modified: 2019-01-08 12:24:33" itemprop="dateModified" datetime="2019-01-08T12:24:33+08:00">2019-01-08</time>
               
             
           </span>
@@ -633,6 +633,14 @@
         
           <!-- toc -->
 <h1 id="生成上下文信息-linguistic-features"><a href="#生成上下文信息-linguistic-features" class="headerlink" title="生成上下文信息 linguistic features"></a>生成上下文信息 linguistic features</h1><p>根据fulllab文件夹和questions属性问题集回答得到linguistic，每个音句一个文件存储在fulllab_answers中</p>
+<p>显示文件夹差异<br><code>diff -r fulllab_answers_perl fulllab_answers_python</code></p>
+<h2 id="修改进度"><a href="#修改进度" class="headerlink" title="修改进度"></a>修改进度</h2><ol>
+<li>都使用编译正则，代码运行更加快速，Python最快！</li>
+<li>在Yanping13K（新旧前端）,BC18三个音库上Python与Perl与C++l答案一样</li>
+<li>原来perl代码判断空行是<code>if ( $line_question eq &quot;\n&quot; )</code>,但是在Mac上执行的话，即使是空行这个判断也为假，猜测是Mac的换行是”\r\n”，因此改为了<code>if ( $line_question =~ /^\s*$/ )</code>,即判断空白字符串的正则。C++也考虑到了<code>\r\n</code>。</li>
+<li>重新生成和修改了C++代码，使用了编译的正则表达式，但是速度依然不及Python</li>
+<li>准备将C++工程拷贝到VS2017，这样可以查看哪里画的时间较多针对性优化（待做因为windows暂时无法调用regex.h）</li>
+</ol>
           <!--noindex-->
           
           <!--/noindex-->
