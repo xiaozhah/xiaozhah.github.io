@@ -117,7 +117,7 @@
 <meta property="og:description" content="命令行指令Linux要查看所有和pdf相关的命令 可以输入pdf 再按Tab键 目录 ls -l看当前目录下文件的基本属性 ls -a看隐藏文件 ls|wc -l查看当前目录下文件+文件夹数 ls -l|grep ^d|wc -l显示当前目录文件夹数 ls -l|grep ^-|wc -l显示当前目录文件数 ls|gawk -F. &amp;#39;{print $2}&amp;#39;|sort -u得到后缀">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/07/26/Linux/1.png">
-<meta property="og:updated_time" content="2019-01-09T03:04:44.293Z">
+<meta property="og:updated_time" content="2019-01-09T03:13:12.962Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux">
 <meta name="twitter:description" content="命令行指令Linux要查看所有和pdf相关的命令 可以输入pdf 再按Tab键 目录 ls -l看当前目录下文件的基本属性 ls -a看隐藏文件 ls|wc -l查看当前目录下文件+文件夹数 ls -l|grep ^d|wc -l显示当前目录文件夹数 ls -l|grep ^-|wc -l显示当前目录文件数 ls|gawk -F. &amp;#39;{print $2}&amp;#39;|sort -u得到后缀">
@@ -444,7 +444,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-01-09 11:04:44" itemprop="dateModified" datetime="2019-01-09T11:04:44+08:00">2019-01-09</time>
+                <time title="Modified: 2019-01-09 11:13:12" itemprop="dateModified" datetime="2019-01-09T11:13:12+08:00">2019-01-09</time>
               
             
           </span>
@@ -644,13 +644,14 @@
 <li><a href="https://wiki.winehq.org/Winetricks" target="_blank" rel="noopener">安装Winetricks</a>，这时候一般64位的终端exe即可运行了(wine test.exe不行再敲一编就行了…)</li>
 <li>为了运行由VS2015编译出来的程序安装vc2015运行时 <code>./winetricks -q vcrun2015</code>（可选，但是不安装有些软件可能无法运行，xvfb-run也是可选项）</li>
 <li><del>第四步报错：(fixme:service:scmdatabase_autostart_services Auto-start service L”MountMgr” failed to start: 2,fixme:service:scmdatabase_autostart_services Auto-start service L”WineBus” failed to start: 2)参考<a href="https://jingyan.baidu.com/article/d169e1867ba57f436611d8d2.html" target="_blank" rel="noopener">百度知道</a>，即<br><code>find / -name mountmgr.sys
-cp /usr/lib64/wine/fakedlls/mountmgr.sys ~/.wine/drive_c/windows/system32/drivers/
+cp /usr/lib64/wine/fakedlls/mountmgr.sys /home/xzhou/.wine/drive_c/windows/system32/drivers/
 find / -name winebus.sys
-cp /usr/lib64/wine/fakedlls/winebus.sys ~/.wine/drive_c/windows/system32/drivers/</code></del></li>
+cp /usr/lib64/wine/fakedlls/winebus.sys /home/xzhou/.wine/drive_c/windows/system32/drivers/</code></del></li>
 <li><del>解决第五步之后第四步继续报错Bad EXE Format.因为CentOS 7没有32位版本，EPEL的wine 没有32位wine，只有64位wine。而vc_redist.x86.exe是一个32位程序。参考<a href="https://www.yuzhi100.com/article/centos-7-anzhuang-wine-3" target="_blank" rel="noopener">CentOS 7 使用 Yum 安装使用最新稳定版 Wine 3</a>继续安装32位的wine</del></li>
 <li><del>安装完成后第四步的Bad EXE Format消除，错误变成<code>0009:fixme:actctx:parse_depend_manifests Could not find dependent assembly L&quot;Microsoft.Windows.Common-Controls&quot; (6.0.0.0)</code>。</del></li>
 <li>然后实在找不到解决办法了。接第四步暴力解决，直接将上一个ubuntu方法的dll拷贝（下载链接见<a href="https://drive.google.com/open?id=1ZhUCU7Dh_YnhAkgHlf_-nQf65akoyVzQ" target="_blank" rel="noopener">谷歌网盘</a>）过来。<code>cp /home/xzhou/Downloads/vcomp140.dll /home/xzhou/.wine/drive_c/windows/system32</code>。完美解决</li>
 </ol>
+<p>所以只需至少要执行1、2、3、4、8即可解决。<br>不过最好第五步也执行以下这样运行exe时少两个fixme警告</p>
 
       
     </div>
