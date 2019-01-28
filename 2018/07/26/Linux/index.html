@@ -117,7 +117,7 @@
 <meta property="og:description" content="命令行指令Linux要查看所有和pdf相关的命令 可以输入pdf 再按Tab键 目录 ls -l看当前目录下文件的基本属性 ls -a看隐藏文件 ls|wc -l查看当前目录下文件+文件夹数 ls -l|grep ^d|wc -l显示当前目录文件夹数 ls -l|grep ^-|wc -l显示当前目录文件数 ls|gawk -F. &amp;#39;{print $2}&amp;#39;|sort -u得到后缀">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/07/26/Linux/1.png">
-<meta property="og:updated_time" content="2019-01-11T11:10:35.250Z">
+<meta property="og:updated_time" content="2019-01-28T07:00:41.344Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux">
 <meta name="twitter:description" content="命令行指令Linux要查看所有和pdf相关的命令 可以输入pdf 再按Tab键 目录 ls -l看当前目录下文件的基本属性 ls -a看隐藏文件 ls|wc -l查看当前目录下文件+文件夹数 ls -l|grep ^d|wc -l显示当前目录文件夹数 ls -l|grep ^-|wc -l显示当前目录文件数 ls|gawk -F. &amp;#39;{print $2}&amp;#39;|sort -u得到后缀">
@@ -444,7 +444,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-01-11 19:10:35" itemprop="dateModified" datetime="2019-01-11T19:10:35+08:00">2019-01-11</time>
+                <time title="Modified: 2019-01-28 15:00:41" itemprop="dateModified" datetime="2019-01-28T15:00:41+08:00">2019-01-28</time>
               
             
           </span>
@@ -615,7 +615,9 @@
 <li>显示所有镜像 <code>docker images</code></li>
 <li>启动/停止某个容器 <code>docker start/stop 容器ID</code></li>
 <li>删除镜像 <code>docker rmi 镜像ID</code></li>
+<li>删除所有TAG为<none>的镜像 <code>docker images|grep none|awk &#39;{print $3}&#39;|xargs docker rmi</code></none></li>
 <li>删除容器 <code>docker rm 容器ID</code></li>
+<li>删除所有容器 <code>docker rm $(docker ps -aq)</code></li>
 <li>在容器运行命令显示系统信息 <code>docker run ubuntu cat /etc/os-release</code>，没有这个镜像则创建镜像（用完可删除容器）</li>
 <li>开启容器交互模式：<code>docker run -it ubuntu</code> exit退出</li>
 <li>打开交互式终端 <code>docker start -i 容器ID</code>，每次使用就使用这个命令就行</li>
