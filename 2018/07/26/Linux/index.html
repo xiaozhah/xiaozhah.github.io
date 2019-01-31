@@ -117,7 +117,7 @@
 <meta property="og:description" content="命令行指令Linux要查看所有和pdf相关的命令 可以输入pdf 再按Tab键 目录 ls -l看当前目录下文件的基本属性 ls -a看隐藏文件 ls|wc -l查看当前目录下文件+文件夹数 ls -l|grep ^d|wc -l显示当前目录文件夹数 ls -l|grep ^-|wc -l显示当前目录文件数 ls|gawk -F. &amp;#39;{print $2}&amp;#39;|sort -u得到后缀">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/07/26/Linux/1.png">
-<meta property="og:updated_time" content="2019-01-31T02:28:20.577Z">
+<meta property="og:updated_time" content="2019-01-31T02:33:10.370Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux">
 <meta name="twitter:description" content="命令行指令Linux要查看所有和pdf相关的命令 可以输入pdf 再按Tab键 目录 ls -l看当前目录下文件的基本属性 ls -a看隐藏文件 ls|wc -l查看当前目录下文件+文件夹数 ls -l|grep ^d|wc -l显示当前目录文件夹数 ls -l|grep ^-|wc -l显示当前目录文件数 ls|gawk -F. &amp;#39;{print $2}&amp;#39;|sort -u得到后缀">
@@ -444,7 +444,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-01-31 10:28:20" itemprop="dateModified" datetime="2019-01-31T10:28:20+08:00">2019-01-31</time>
+                <time title="Modified: 2019-01-31 10:33:10" itemprop="dateModified" datetime="2019-01-31T10:33:10+08:00">2019-01-31</time>
               
             
           </span>
@@ -626,6 +626,7 @@
 </ul>
 <h2 id="建立Dockerfile"><a href="#建立Dockerfile" class="headerlink" title="建立Dockerfile"></a>建立Dockerfile</h2><ul>
 <li>根据<a href="https://github.com/xiaozhah/WineSingularity" target="_blank" rel="noopener">Dockerfile</a>建立文件 <code>docker build -t wineubuntu . --no-cache --rm</code></li>
+<li>⚠️ Dockerfile不同于SingularityFile 它的建立每个RUN是独立的，因此涉及相对目录时要小心</li>
 <li>–no-cache代表不使用缓存，这样建立出错不能从中间某一步重来; –rm代表删除建立中的临时容器</li>
 <li>提交至仓库 <code>docker push xzhou2333/wineubuntu</code></li>
 </ul>
