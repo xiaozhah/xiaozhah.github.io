@@ -517,184 +517,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/15/语音合成工具/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="xzhou">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/icon.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Blog of Xiao">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2018/09/15/语音合成工具/" class="post-title-link" itemprop="http://yoursite.com/index.html">语音合成工具</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2018-09-15 21:08:33" itemprop="dateCreated datePublished" datetime="2018-09-15T21:08:33+08:00">2018-09-15</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2019-01-14 14:37:37" itemprop="dateModified" datetime="2019-01-14T14:37:37+08:00">2019-01-14</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/语音/" itemprop="url" rel="index"><span itemprop="name">语音</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <!-- toc -->
-<h1 id="生成上下文信息-linguistic-features"><a href="#生成上下文信息-linguistic-features" class="headerlink" title="生成上下文信息 linguistic features"></a>生成上下文信息 linguistic features</h1><p>根据fulllab文件夹和questions属性问题集回答得到linguistic，每个音句一个文件存储在fulllab_answers中</p>
-<p>显示文件夹差异<br><code>diff -r fulllab_answers_perl fulllab_answers_python</code></p>
-<h2 id="修改进度"><a href="#修改进度" class="headerlink" title="修改进度"></a>修改进度</h2><ol>
-<li>都使用编译正则，代码运行更加快速，Python最快！</li>
-<li>在Yanping13K（新旧前端,以及更新的913维前端）,BC18三个音库上Python与Perl与C++l答案一样</li>
-<li>原来perl代码判断空行是<code>if ( $line_question eq &quot;\n&quot; )</code>,但是在Mac上执行的话，即使是空行这个判断也为假，猜测是Mac的换行是”\r\n”，因此改为了<code>if ( $line_question =~ /^\s*$/ )</code>,即判断空白字符串的正则。C++也考虑到了<code>\r\n</code>。</li>
-<li>重新生成和修改了C++代码，使用了编译的正则表达式，但是速度依然不及Python</li>
-<li>准备将C++工程拷贝到VS2017，这样可以查看哪里画的时间较多针对性优化</li>
-</ol>
-          <!--noindex-->
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/28/印度之行/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2046,6 +1868,180 @@ xvfb-run wolfram</code><br>此时运行这个代码就正常了</p>
 
 
     
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/26/Tensorflow/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="xzhou">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/icon.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Blog of Xiao">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2018/07/26/Tensorflow/" class="post-title-link" itemprop="http://yoursite.com/index.html">Tensorflow</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-07-26 21:35:02" itemprop="dateCreated datePublished" datetime="2018-07-26T21:35:02+08:00">2018-07-26</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-10-20 10:34:12" itemprop="dateModified" datetime="2018-10-20T10:34:12+08:00">2018-10-20</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/机器学习/" itemprop="url" rel="index"><span itemprop="name">机器学习</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <!-- toc -->
+<h1 id="Tensorflow基本指南"><a href="#Tensorflow基本指南" class="headerlink" title="Tensorflow基本指南"></a>Tensorflow基本指南</h1><ol>
+<li>使用Anaconda安装，运行更快，参见</li>
+<li>会话注册<code>sess=tf.InteractivateSession()</code><br>表示将是这个创建的session作为随后默认的session，之后的运行也运算也在这里面进行</li>
+<li>列出当前每个节点使用的device，使用的是<code>tf.Session(config=tf.ConfigProto(log_device_placement=True))</code></li>
+</ol>
+          <!--noindex-->
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
   </section>
 
   
@@ -2097,7 +2093,7 @@ xvfb-run wolfram</code><br>此时运行这个代码就正常了</p>
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">15</span>
+                    <span class="site-state-item-count">14</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -2124,9 +2120,7 @@ xvfb-run wolfram</code><br>此时运行这个代码就正常了</p>
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">categories</span>
                   </a>
                 </div>
@@ -2185,11 +2179,7 @@ xvfb-run wolfram</code><br>此时运行这个代码就正常了</p>
                     
                       
                     
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">25</span>
+                    <span class="site-state-item-count">23</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
