@@ -1106,7 +1106,9 @@ cp /usr/lib64/wine/fakedlls/winebus.sys /home/xzhou/.wine/drive_c/windows/system
   <entry>
     <title>paper_demos/IEEE2020/index</title>
     <url>/2020/04/26/paper_demos/IEEE2020/index/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><!DOCTYPE html>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>layout: false
+
+<!DOCTYPE html>
 <html>
 
 <head>
