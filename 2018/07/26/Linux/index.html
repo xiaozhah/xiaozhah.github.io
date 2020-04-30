@@ -108,19 +108,21 @@
 
 
 
-  <meta name="description" content="命令行指令Linux要查看所有和pdf相关的命令 可以输入pdf 再按Tab键 目录 ls -l看当前目录下文件的基本属性 ls -a看隐藏文件 ls|wc -l查看当前目录下文件+文件夹数 ls -l|grep ^d|wc -l显示当前目录文件夹数 ls -l|grep ^-|wc -l显示当前目录文件数 ls|gawk -F. &amp;#39;{print $2}&amp;#39;|sort -u得到后缀">
-<meta name="keywords" content="Mac,Unix,操作系统,Linux">
+  <meta name="description" content="命令行指令Linux要查看所有和pdf相关的命令 可以输入pdf 再按Tab键 目录 ls -l看当前目录下文件的基本属性 ls -a看隐藏文件 ls|wc -l查看当前目录下文件+文件夹数 ls -l|grep ^d|wc -l显示当前目录文件夹数 ls -l|grep ^-|wc -l显示当前目录文件数 ls|gawk -F. &#39;{print $2}&#39;|sort -u得到后缀">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Linux">
 <meta property="og:url" content="http://yoursite.com/2018/07/26/Linux/index.html">
 <meta property="og:site_name" content="Blog of Xiao">
-<meta property="og:description" content="命令行指令Linux要查看所有和pdf相关的命令 可以输入pdf 再按Tab键 目录 ls -l看当前目录下文件的基本属性 ls -a看隐藏文件 ls|wc -l查看当前目录下文件+文件夹数 ls -l|grep ^d|wc -l显示当前目录文件夹数 ls -l|grep ^-|wc -l显示当前目录文件数 ls|gawk -F. &amp;#39;{print $2}&amp;#39;|sort -u得到后缀">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:description" content="命令行指令Linux要查看所有和pdf相关的命令 可以输入pdf 再按Tab键 目录 ls -l看当前目录下文件的基本属性 ls -a看隐藏文件 ls|wc -l查看当前目录下文件+文件夹数 ls -l|grep ^d|wc -l显示当前目录文件夹数 ls -l|grep ^-|wc -l显示当前目录文件数 ls|gawk -F. &#39;{print $2}&#39;|sort -u得到后缀">
 <meta property="og:image" content="http://yoursite.com/2018/07/26/Linux/1.png">
-<meta property="og:updated_time" content="2019-01-31T02:33:10.370Z">
+<meta property="article:published_time" content="2018-07-26T13:27:08.000Z">
+<meta property="article:modified_time" content="2019-03-26T12:54:44.201Z">
+<meta property="article:author" content="xzhou">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="Mac">
+<meta property="article:tag" content="Unix">
+<meta property="article:tag" content="操作系统">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux">
-<meta name="twitter:description" content="命令行指令Linux要查看所有和pdf相关的命令 可以输入pdf 再按Tab键 目录 ls -l看当前目录下文件的基本属性 ls -a看隐藏文件 ls|wc -l查看当前目录下文件+文件夹数 ls -l|grep ^d|wc -l显示当前目录文件夹数 ls -l|grep ^-|wc -l显示当前目录文件数 ls|gawk -F. &amp;#39;{print $2}&amp;#39;|sort -u得到后缀">
 <meta name="twitter:image" content="http://yoursite.com/2018/07/26/Linux/1.png">
 
 
@@ -178,7 +180,7 @@
   </style>
 </noscript>
 
-</head>
+<meta name="generator" content="Hexo 4.2.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -444,7 +446,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-01-31 10:33:10" itemprop="dateModified" datetime="2019-01-31T10:33:10+08:00">2019-01-31</time>
+                <time title="Modified: 2019-03-26 20:54:44" itemprop="dateModified" datetime="2019-03-26T20:54:44+08:00">2019-03-26</time>
               
             
           </span>
@@ -461,7 +463,7 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/常见指令以及用法备忘录/" itemprop="url" rel="index"><span itemprop="name">常见指令以及用法备忘录</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/%E5%B8%B8%E8%A7%81%E6%8C%87%E4%BB%A4%E4%BB%A5%E5%8F%8A%E7%94%A8%E6%B3%95%E5%A4%87%E5%BF%98%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">常见指令以及用法备忘录</span></a></span>
 
                 
                 
@@ -511,13 +513,15 @@
 <li><code>ls|wc -l</code>查看当前目录下文件+文件夹数</li>
 <li><code>ls -l|grep ^d|wc -l</code>显示当前目录文件夹数</li>
 <li><code>ls -l|grep ^-|wc -l</code>显示当前目录文件数</li>
-<li><code>ls|gawk -F. &#39;{print $2}&#39;|sort -u</code>得到后缀类型（空白是目录）</li>
+<li><code>ls|gawk -F. &#39;{print $2}&#39;|sort -u</code>得到后缀类型（空白是目录） </li>
 </ul>
 <h2 id="压缩"><a href="#压缩" class="headerlink" title="压缩"></a>压缩</h2><ul>
 <li>bz2文件解压缩：压缩：<code>bzip2 file</code> 解压：<code>bzip2 -dk file.bz2</code>。-d表示解压，-k表示不删除源文件</li>
 <li>rar文件解压缩：压缩目录：<code>rar a test ./script/</code>，查看压缩包文件内容是：<code>rar l test.rar</code>，解压：<code>unrar e test.rar ./script/</code></li>
 <li>tar文件：压缩目录：<code>tar -cvf test.tar ./test</code>，解压：<code>tar -xvf test.tar</code></li>
 <li>zip：压缩目录：<code>zip -r test.zip ./test</code>，解压：<code>unzip test.zip</code></li>
+<li>查看zip文件：<code>unzip -l files.zip | less</code>或者<code>vim files.zip</code></li>
+<li>fuse-zip 可以实现zip文件的挂载，niubility！</li>
 </ul>
 <h2 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h2><ul>
 <li>服务器文件拷贝到本地：<code>scp xzhou@172.16.46.88:/home/xzhou/Downloads/test.rar ./Downloads/test.rar</code></li>
@@ -530,6 +534,7 @@
 <li>当然也可以挂载其他服务器的anaconda(这时候注意源文件夹和目标文件夹的名字一致，考虑到不想修改环境变量)，但是注意首先需要将本地的<code>~/.bashrc</code>文件注释掉conda部分再source指令，然后再挂载（不然会出现无响应），再取消注释再source指令</li>
 <li><code>ln -s /tmp/test1.txt test2.txt</code> 将在当前目录下创建符号文件“test2.txt”，<code>ln -s /tmp/test1.txt</code> 将在当前目录下创建符号文件“test1.txt”。删除链接符号文件语法是<code>rm file</code>或者<code>rm dir</code></li>
 <li>文件夹简单合并命令:将1和2文件夹内容合并到3<code>mkdir 3;mv -i 1 3;mv -i 2 3</code>，这时候1和2文件夹就是空的了。但是当文件夹文件庞大时会报错<code>-bash: /bin/mv: Argument list too long</code>,需要使用指令<code>find 1 -name &#39;*.*&#39; -exec mv {} 3 \;</code>和<code>find 2 -name &#39;*.*&#39; -exec mv {} 3 \;</code></li>
+<li>将7行的文本分成前后两部分：<code>cat test.lst|head -n 3</code>(前3) <code>cat test.lst|tail -n +4</code>(后4)</li>
 </ul>
 <h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
 <li><code>cat std_std_wiki.txt|grep --color=always -n &#39;query&#39;|less -R</code> 显示查询的结构。-R是Repaint screen, discarding buffered input.</li>
@@ -540,10 +545,9 @@
 <li>Linux系统中的<strong>wc</strong>(Word Count)命令的功能为统计指定文件中的字节数、字数、行数，并将统计结果显示输出</li>
 </ul>
 <h3 id="PDF相关"><a href="#PDF相关" class="headerlink" title="PDF相关"></a>PDF相关</h3><h4 id="PDF-gt-TXT"><a href="#PDF-gt-TXT" class="headerlink" title="PDF-&gt;TXT"></a>PDF-&gt;TXT</h4><p>pdftotext可以得到pdf对应的纯文本版本</p>
-<h4 id="字体嵌入"><a href="#字体嵌入" class="headerlink" title="字体嵌入"></a>字体嵌入</h4><p>会议提交论文要求PDF字体嵌入<br>强制字体嵌入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pdf2ps template.pdf</span><br><span class="line">ps2pdf -dPDFSETTINGS=/prepress template.ps template.pdf</span><br></pre></td></tr></table></figure></p>
-<p>验证：<code>pdffonts template.pdf</code><br>可以看到所有字体已被嵌入<br><img src="/2018/07/26/Linux/1.png"></p>
+<h4 id="字体嵌入"><a href="#字体嵌入" class="headerlink" title="字体嵌入"></a>字体嵌入</h4><p>会议提交论文要求PDF字体嵌入<br>强制字体嵌入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pdf2ps template.pdf</span><br><span class="line">ps2pdf -dPDFSETTINGS=/prepress template.ps template.pdf</span><br></pre></td></tr></table></figure><br>验证：<code>pdffonts template.pdf</code><br>可以看到所有字体已被嵌入<br><img src="/2018/07/26/Linux/1.png" class=""></p>
 <h4 id="显示PDF信息-MacOS"><a href="#显示PDF信息-MacOS" class="headerlink" title="显示PDF信息 (MacOS)"></a>显示PDF信息 (MacOS)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew install xpdf</span><br><span class="line">pdfinfo test.pdf</span><br></pre></td></tr></table></figure>
-<h4 id="PDF修改作者等metadata-MacOS"><a href="#PDF修改作者等metadata-MacOS" class="headerlink" title="PDF修改作者等metadata (MacOS)"></a>PDF修改作者等metadata (MacOS)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew install exiftool</span><br><span class="line">exiftool -Title=&quot;Change This Title&quot; -Subject=&quot;Fun and PDF&quot; change_my_meta.pdf</span><br></pre></td></tr></table></figure>
+<h4 id="PDF修改作者等metadata-MacOS"><a href="#PDF修改作者等metadata-MacOS" class="headerlink" title="PDF修改作者等metadata (MacOS)"></a>PDF修改作者等metadata (MacOS)</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew install exiftool</span><br><span class="line">exiftool -Title&#x3D;&quot;Change This Title&quot; -Subject&#x3D;&quot;Fun and PDF&quot; change_my_meta.pdf</span><br></pre></td></tr></table></figure>
 <h2 id="图像处理"><a href="#图像处理" class="headerlink" title="图像处理"></a>图像处理</h2><p>Mac需要 brew install imagemagick才能使用convert</p>
 <p>gif转一些列图片（帧为单位） <code>convert test.gif test%05d.png</code><br>一系列png转视频 <code>ffmpeg -i test%05d.png test.mp4</code></p>
 <p>如果需要将视频速度变慢要加选项 <code>-filter:v &quot;setpts=2.0*PTS&quot;</code><br>要让符合MP4V2格式需要加选项 <code>-brand mp42</code><br>比如<code>ffmpeg -i test%05d.png -filter:v &quot;setpts=2.0*PTS&quot; -brand mp42 test.mp4</code></p>
@@ -555,8 +559,7 @@
 <li><code>lsb_release -a</code>查看系统版本(没有就用<code>yum install lsb</code>或者<code>cat /etc/os-release</code>)</li>
 <li>关机 <code>shutdown -r now</code></li>
 </ul>
-<h4 id="安装软件的依赖库"><a href="#安装软件的依赖库" class="headerlink" title="安装软件的依赖库"></a>安装软件的依赖库</h4><p>Ubuntu:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo sed -Ei &apos;s/^# deb-src /deb-src /&apos; /etc/apt/sources.list</span><br><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get build-dep wine-stable</span><br></pre></td></tr></table></figure></p>
-<p>CentOS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum-builddep -y wine</span><br></pre></td></tr></table></figure></p>
+<h4 id="安装软件的依赖库"><a href="#安装软件的依赖库" class="headerlink" title="安装软件的依赖库"></a>安装软件的依赖库</h4><p>Ubuntu:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo sed -Ei &#39;s&#x2F;^# deb-src &#x2F;deb-src &#x2F;&#39; &#x2F;etc&#x2F;apt&#x2F;sources.list</span><br><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get build-dep wine-stable</span><br></pre></td></tr></table></figure><br>CentOS:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum-builddep -y wine</span><br></pre></td></tr></table></figure></p>
 <h3 id="增加用户"><a href="#增加用户" class="headerlink" title="增加用户"></a>增加用户</h3><p>先登录root用户</p>
 <ol>
 <li>adduser xzhou</li>
@@ -597,7 +600,7 @@
 <p><kbd>Ctrl</kbd> + <kbd>U</kbd> - 剪切光标前的内容<br><kbd>Ctrl</kbd> + <kbd>K</kbd> - 剪切光标至行末的内容<br><kbd>Ctrl</kbd> + <kbd>Y</kbd> - 粘贴<br><kbd>Ctrl</kbd> + <kbd>E</kbd> - 移动光标到行末<br><kbd>Ctrl</kbd> + <kbd>A</kbd> - 移动光标到行首<br><kbd>Ctrl</kbd> + <kbd>F</kbd> - 跳向下一个空格<br><kbd>Ctrl</kbd> + <kbd>B</kbd> - 跳回上一个空格<br><kbd>Alt</kbd> + <kbd>Backspace</kbd> - 删除前一个单词<br><kbd>Ctrl</kbd> + <kbd>W</kbd> - 剪切光标后一个单词<br><kbd>Shift</kbd> + <kbd>Insert</kbd> - 向终端内粘贴文本</p>
 <h2 id="暂停并在后台运行命令"><a href="#暂停并在后台运行命令" class="headerlink" title="暂停并在后台运行命令"></a>暂停并在后台运行命令</h2><p><kbd>Ctrl</kbd> + <kbd>Z</kbd> - 暂停应用程序（比如正在用nano编辑test.txt）<br>fg - 重新将程序唤到前台<br>jobs - 查看任务数目<br>只要按<kbd>Ctrl</kbd> + <kbd>Z</kbd>，前台的命令就会暂停，画面就切回到命令行了。然后你就能运行你想要运行的命令，等命令运行完后在终端窗口输入fg就可以回到先前暂停的任务</p>
 <h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><h3 id="普通下载"><a href="#普通下载" class="headerlink" title="普通下载"></a>普通下载</h3><p>使用axel<br><code>apt-get install axel</code><br>使用简单 <code>axel URL</code><br>我常用的指令:多线程(10个)下载并改变进度条样式：<code>axel -n 32 -a URL</code></p>
-<h3 id="下载视频"><a href="#下载视频" class="headerlink" title="下载视频"></a>下载视频</h3><p>使用you-get和youtube-dl以及<a href="http://docker run alpine cat /etc/os-release.flvcd.com/" target="_blank" rel="noopener">硕鼠</a><br>从Youtube视频中下载音频（wav格式）支持b站<br>youtube-dl –extract-audio –audio-format wav URL</p>
+<h3 id="下载视频"><a href="#下载视频" class="headerlink" title="下载视频"></a>下载视频</h3><p>使用you-get和youtube-dl以及<a href="http://docker run alpine cat /etc/os-release.flvcd.com/">硕鼠</a><br>从Youtube视频中下载音频（wav格式）支持b站<br>youtube-dl –extract-audio –audio-format wav URL</p>
 <p>比如我想下载这个<a href="http://www.miaopai.com/show/R~22buLsn55r7IVQKvMjZ4Le2mJ7PS7BqxjbAg__.htm" target="_blank" rel="noopener">情非得已</a>的音频</p>
 <ol>
 <li>使用python3安装you-get</li>
@@ -607,27 +610,44 @@
 </ol>
 <h3 id="后台下载视频"><a href="#后台下载视频" class="headerlink" title="后台下载视频"></a>后台下载视频</h3><p>如果现在很多个b站视频需要下载，是不是就是CTRL + Z and fg 结合 youtube-dl，实践发现不行，挂起时下载会暂停。之前我玩过树莓派，很多Linux知识都是从那里学到的</p>
 <p>所以我发现了screen命令. MacOS是自带的,Linux使用<code>sudo apt-get install screen</code>安装</p>
-<p>终端输入（Xshell软件里操作一样的）:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen youtube-dl --extract-audio --audio-format mp3 https://www.bilibili.com/video/av6846882</span><br></pre></td></tr></table></figure></p>
-<p>它会下载第一个视频，这时候按住<kbd>Ctrl</kbd>+<kbd>A</kbd>然后<kbd>Ctrl</kbd>+<kbd>D</kbd>会回到终端，但是视频依然在下载，这时候再次终端输出新的视频PID，就会下载第二个，以此类推…</p>
+<p>终端输入（Xshell软件里操作一样的）:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screen youtube-dl --extract-audio --audio-format mp3 https://www.bilibili.com/video/av6846882</span><br></pre></td></tr></table></figure><br>它会下载第一个视频，这时候按住<kbd>Ctrl</kbd>+<kbd>A</kbd>然后<kbd>Ctrl</kbd>+<kbd>D</kbd>会回到终端，但是视频依然在下载，这时候再次终端输出新的视频PID，就会下载第二个，以此类推…</p>
 <p>查看所以任务是<code>screen -ls</code>,所有视频一旦完成下载，<code>screen -ls</code>就会输出<code>No Sockets found in bilibala...</code>。说明一个任务完成它会自动退出那个虚拟终端的</p>
 <p>如果我们关闭终端不影响screen，不信你重新打开终端试试<code>screen -ls</code></p>
 <p>恢复一个虚拟终端命令是<code>screen -r ID号</code><br>如果终端本身自己不能结束，就<code>screen -r ID号</code>然后<code>exit</code></p>
 <h1 id="虚拟化技术"><a href="#虚拟化技术" class="headerlink" title="虚拟化技术"></a>虚拟化技术</h1><h2 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h2><h3 id="指令-1"><a href="#指令-1" class="headerlink" title="指令"></a>指令</h3><ul>
+<li>搜索镜像<code>docker search 镜像ID</code></li>
+<li>使用后台运行(-d)容器<code>docker run -d 镜像ID</code></li>
+<li>运行基于容器名<code>docker run --name mycontainer 镜像ID</code></li>
+<li>运行时暴露端口<code>-p &lt;host-port&gt;:&lt;container-port&gt;</code>(如果没指定host-port,主机会随机指定一个可使用的port去和container的port做连接，此时可用<code>docker port 容器ID 容器暴露的端口</code>或者<code>docker ps</code>检查)</li>
+<li>运行时挂载宿主机目录<code>-v &lt;host-dir&gt;:&lt;container-dir&gt;</code></li>
+<li>运行容器的shell命令<code>docker run -it ubuntu bash</code></li>
 <li>查看当前正在运行的容器 <code>docker ps</code>，显示已经退出的容器 <code>docker ps -a</code></li>
+<li>列出容器详细信息，例如ip地址<code>docker inspect 容器ID</code></li>
+<li>列出容器的标准输出stdout和stderr<code>docker logs 容器ID</code></li>
 <li>显示所有镜像 <code>docker images</code></li>
 <li>启动/停止某个容器 <code>docker start/stop 容器ID</code></li>
 <li>删除镜像 <code>docker rmi 镜像ID</code></li>
-<li>删除所有TAG为<none>的镜像 <code>docker images|grep none|awk &#39;{print $3}&#39;|xargs docker rmi</code></none></li>
+<li>删除所有TAG为<none>的镜像 <code>docker images|grep none|awk &#39;{print $3}&#39;|xargs docker rmi</code></li>
 <li>删除容器 <code>docker rm 容器ID</code></li>
 <li>删除所有容器 <code>docker rm $(docker ps -aq)</code></li>
 <li>在容器运行命令显示系统信息 <code>docker run ubuntu cat /etc/os-release</code>，没有这个镜像则创建镜像（用完可删除容器）</li>
 <li>开启容器交互模式：<code>docker run -it ubuntu</code> exit退出</li>
 <li>打开交互式终端 <code>docker start -i 容器ID</code>，每次使用就使用这个命令就行</li>
 </ul>
+<h3 id="Dockerfile"><a href="#Dockerfile" class="headerlink" title="Dockerfile"></a>Dockerfile</h3><p>一个范例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">FROM nginx:1.11-alpine</span><br><span class="line">COPY index.html &#x2F;usr&#x2F;share&#x2F;nginx&#x2F;html</span><br><span class="line">EXPOSE 80</span><br><span class="line"># equal to nginx -g daemon off;</span><br><span class="line">CMD [&quot;nginx&quot;, &quot;-g&quot;, &quot;daemon off;&quot;]</span><br></pre></td></tr></table></figure><br>执行：<br><code>docker build -t my-nginx-image:latest .</code><br><code>docker run -d -p 80:80 my-nginx-image:latest</code><br><code>curl -i http://docker</code>(得到完整的http response)</p>
+<p>Dockerfile的ONBUILD指令：</p>
+<ul>
+<li>旧dockerfile中有ONBUILD前缀的指令在docker build的时候不会执行</li>
+<li>新的dockerfile在docker build的时候会完整执行基础镜像的dockerfile指令（包含ONBUILD 的）以及自己的dockerfile包含的指令</li>
+<li>有效简短继承旧dockerfile时需要写的指令量</li>
+<li>祖父dockerfile中的ONBUILD在孙子dockerfile做docker build时不会执行</li>
+</ul>
+<p>使用.dockerignore可避免增加无用的文件或者敏感文件进入build的过程</p>
 <h2 id="建立Dockerfile"><a href="#建立Dockerfile" class="headerlink" title="建立Dockerfile"></a>建立Dockerfile</h2><ul>
-<li>根据<a href="https://github.com/xiaozhah/WineSingularity" target="_blank" rel="noopener">Dockerfile</a>建立文件 <code>docker build -t wineubuntu . --no-cache --rm</code></li>
+<li>根据<a href="https://github.com/xiaozhah/WineDocker/blob/master/Dockerfile" target="_blank" rel="noopener">Dockerfile</a>建立文件 <code>docker build -t wineubuntu . --no-cache --rm</code></li>
 <li>⚠️ Dockerfile不同于SingularityFile 它的建立每个RUN是独立的，因此涉及相对目录时要小心</li>
 <li>–no-cache代表不使用缓存，这样建立出错不能从中间某一步重来; –rm代表删除建立中的临时容器</li>
+<li><code>-t &lt;repository:tag&gt;</code>表示生成镜像的repository名称（即image名称），以及通常作为区分不同版本的TAG</li>
 <li>提交至仓库 <code>docker push xzhou2333/wineubuntu</code></li>
 </ul>
 <h3 id="镜像打包发布"><a href="#镜像打包发布" class="headerlink" title="镜像打包发布"></a>镜像打包发布</h3><ul>
@@ -635,7 +655,7 @@
 <li><code>docker commit 容器ID xzhou2333/winecentos</code>,这时候就多出一个镜像了</li>
 <li><code>docker push xzhou2333/winecentos</code></li>
 </ul>
-<h2 id="Singularity"><a href="#Singularity" class="headerlink" title="Singularity"></a>Singularity</h2><h3 id="指令-2"><a href="#指令-2" class="headerlink" title="指令"></a>指令</h3><p>–H 指定家目录<br>–containall 指定以isolated的方式运行镜像<br>–pwd 指定进入容器后的初始工作目录</p>
+<h2 id="Singularity"><a href="#Singularity" class="headerlink" title="Singularity"></a>Singularity</h2><h3 id="指令-2"><a href="#指令-2" class="headerlink" title="指令"></a>指令</h3><p>–H 指定家目录<br>–containall 指定以isolated的方式运行镜像(也就是说一般默认会挂载宿主机home目录,pwd当前工作目录以及/tmp目录,但是现在都不挂载)<br>–pwd 指定进入容器后的初始工作目录</p>
 <h3 id="镜像打包发布-1"><a href="#镜像打包发布-1" class="headerlink" title="镜像打包发布"></a>镜像打包发布</h3><ul>
 <li>注册<a href="https://www.singularity-hub.org" target="_blank" rel="noopener">Singularity Hub</a>账户开启新的仓库</li>
 <li>关联Github的Singularity仓库，<a href="https://github.com/xiaozhah/WineSingularity" target="_blank" rel="noopener">例如</a></li>
@@ -669,6 +689,7 @@ cp /usr/lib64/wine/fakedlls/winebus.sys /home/xzhou/.wine/drive_c/windows/system
 <li>然后实在找不到解决办法了。接第四步暴力解决，直接将上一个ubuntu方法的dll拷贝（下载链接见<a href="https://drive.google.com/open?id=1ZhUCU7Dh_YnhAkgHlf_-nQf65akoyVzQ" target="_blank" rel="noopener">谷歌网盘</a>）过来。<code>cp /home/xzhou/Downloads/vcomp140.dll /home/xzhou/.wine/drive_c/windows/system32</code>。完美解决</li>
 </ol>
 <p>所以只需至少要执行1、2、3、4、8即可解决。<br>不过最好第五步也执行以下这样运行exe时少两个fixme警告</p>
+<h1 id="内网穿透"><a href="#内网穿透" class="headerlink" title="内网穿透"></a>内网穿透</h1><p>目前使用的是ngrok，如果从内网服务器下载软件会先<code>python -m SimpleHTTPServer</code>再<code>ngrok http 8000</code></p>
 
       
     </div>
@@ -689,13 +710,13 @@ cp /usr/lib64/wine/fakedlls/winebus.sys /home/xzhou/.wine/drive_c/windows/system
       
         <div class="post-tags">
           
+            <a href="/tags/Linux/" rel="tag"># Linux</a>
+          
             <a href="/tags/Mac/" rel="tag"># Mac</a>
           
             <a href="/tags/Unix/" rel="tag"># Unix</a>
           
-            <a href="/tags/操作系统/" rel="tag"># 操作系统</a>
-          
-            <a href="/tags/Linux/" rel="tag"># Linux</a>
+            <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/" rel="tag"># 操作系统</a>
           
         </div>
       
@@ -708,7 +729,7 @@ cp /usr/lib64/wine/fakedlls/winebus.sys /home/xzhou/.wine/drive_c/windows/system
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/07/26/素材网站/" rel="next" title="素材网站">
+              <a href="/2018/07/26/%E7%B4%A0%E6%9D%90%E7%BD%91%E7%AB%99/" rel="next" title="素材网站">
                 <i class="fa fa-chevron-left"></i> 素材网站
               </a>
             
@@ -797,7 +818,7 @@ cp /usr/lib64/wine/fakedlls/winebus.sys /home/xzhou/.wine/drive_c/windows/system
               
                 <div class="site-state-item site-state-posts">
                 
-                  <a href="/archives/">
+                  <a href="/archives/%20%7C%7C%20archive">
                 
                     <span class="site-state-item-count">13</span>
                     <span class="site-state-item-name">posts</span>
@@ -920,7 +941,7 @@ cp /usr/lib64/wine/fakedlls/winebus.sys /home/xzhou/.wine/drive_c/windows/system
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#命令行指令"><span class="nav-number">1.</span> <span class="nav-text">命令行指令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#目录"><span class="nav-number">1.1.</span> <span class="nav-text">目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#压缩"><span class="nav-number">1.2.</span> <span class="nav-text">压缩</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件操作"><span class="nav-number">1.3.</span> <span class="nav-text">文件操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他"><span class="nav-number">1.4.</span> <span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Mac对应Windows的按键"><span class="nav-number">2.</span> <span class="nav-text">Mac对应Windows的按键</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#文字处理"><span class="nav-number">2.1.</span> <span class="nav-text">文字处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#PDF相关"><span class="nav-number">2.1.1.</span> <span class="nav-text">PDF相关</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#PDF-gt-TXT"><span class="nav-number">2.1.1.1.</span> <span class="nav-text">PDF-&gt;TXT</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字体嵌入"><span class="nav-number">2.1.1.2.</span> <span class="nav-text">字体嵌入</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#显示PDF信息-MacOS"><span class="nav-number">2.1.1.3.</span> <span class="nav-text">显示PDF信息 (MacOS)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#PDF修改作者等metadata-MacOS"><span class="nav-number">2.1.1.4.</span> <span class="nav-text">PDF修改作者等metadata (MacOS)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图像处理"><span class="nav-number">2.2.</span> <span class="nav-text">图像处理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#系统"><span class="nav-number">2.3.</span> <span class="nav-text">系统</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#指令"><span class="nav-number">2.3.1.</span> <span class="nav-text">指令</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装软件的依赖库"><span class="nav-number">2.3.1.1.</span> <span class="nav-text">安装软件的依赖库</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#增加用户"><span class="nav-number">2.3.2.</span> <span class="nav-text">增加用户</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#显卡-GPU计算"><span class="nav-number">2.4.</span> <span class="nav-text">显卡 GPU计算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#进程"><span class="nav-number">2.5.</span> <span class="nav-text">进程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工具"><span class="nav-number">2.6.</span> <span class="nav-text">工具</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#远程控制"><span class="nav-number">3.</span> <span class="nav-text">远程控制</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装VNC-server"><span class="nav-number">3.1.</span> <span class="nav-text">安装VNC-server</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装teamviewer或xrdp"><span class="nav-number">3.2.</span> <span class="nav-text">安装teamviewer或xrdp</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#美化和汉化man"><span class="nav-number">4.</span> <span class="nav-text">美化和汉化man</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#汉化"><span class="nav-number">4.1.</span> <span class="nav-text">汉化</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#小技巧"><span class="nav-number">5.</span> <span class="nav-text">小技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#让上一个命令以管理员身份执行"><span class="nav-number">5.1.</span> <span class="nav-text">让上一个命令以管理员身份执行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#快捷键"><span class="nav-number">5.2.</span> <span class="nav-text">快捷键</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#暂停并在后台运行命令"><span class="nav-number">5.3.</span> <span class="nav-text">暂停并在后台运行命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下载"><span class="nav-number">5.4.</span> <span class="nav-text">下载</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#普通下载"><span class="nav-number">5.4.1.</span> <span class="nav-text">普通下载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下载视频"><span class="nav-number">5.4.2.</span> <span class="nav-text">下载视频</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后台下载视频"><span class="nav-number">5.4.3.</span> <span class="nav-text">后台下载视频</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#虚拟化技术"><span class="nav-number">6.</span> <span class="nav-text">虚拟化技术</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Docker"><span class="nav-number">6.1.</span> <span class="nav-text">Docker</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#指令-1"><span class="nav-number">6.1.1.</span> <span class="nav-text">指令</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#建立Dockerfile"><span class="nav-number">6.2.</span> <span class="nav-text">建立Dockerfile</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#镜像打包发布"><span class="nav-number">6.2.1.</span> <span class="nav-text">镜像打包发布</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Singularity"><span class="nav-number">6.3.</span> <span class="nav-text">Singularity</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#指令-2"><span class="nav-number">6.3.1.</span> <span class="nav-text">指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#镜像打包发布-1"><span class="nav-number">6.3.2.</span> <span class="nav-text">镜像打包发布</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#wine"><span class="nav-number">7.</span> <span class="nav-text">wine</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Ubuntu"><span class="nav-number">7.1.</span> <span class="nav-text">Ubuntu</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CentOS"><span class="nav-number">7.2.</span> <span class="nav-text">CentOS</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#命令行指令"><span class="nav-number">1.</span> <span class="nav-text">命令行指令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#目录"><span class="nav-number">1.1.</span> <span class="nav-text">目录</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#压缩"><span class="nav-number">1.2.</span> <span class="nav-text">压缩</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#文件操作"><span class="nav-number">1.3.</span> <span class="nav-text">文件操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他"><span class="nav-number">1.4.</span> <span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Mac对应Windows的按键"><span class="nav-number">2.</span> <span class="nav-text">Mac对应Windows的按键</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#文字处理"><span class="nav-number">2.1.</span> <span class="nav-text">文字处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#PDF相关"><span class="nav-number">2.1.1.</span> <span class="nav-text">PDF相关</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#PDF-gt-TXT"><span class="nav-number">2.1.1.1.</span> <span class="nav-text">PDF-&gt;TXT</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字体嵌入"><span class="nav-number">2.1.1.2.</span> <span class="nav-text">字体嵌入</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#显示PDF信息-MacOS"><span class="nav-number">2.1.1.3.</span> <span class="nav-text">显示PDF信息 (MacOS)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#PDF修改作者等metadata-MacOS"><span class="nav-number">2.1.1.4.</span> <span class="nav-text">PDF修改作者等metadata (MacOS)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图像处理"><span class="nav-number">2.2.</span> <span class="nav-text">图像处理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#系统"><span class="nav-number">2.3.</span> <span class="nav-text">系统</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#指令"><span class="nav-number">2.3.1.</span> <span class="nav-text">指令</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装软件的依赖库"><span class="nav-number">2.3.1.1.</span> <span class="nav-text">安装软件的依赖库</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#增加用户"><span class="nav-number">2.3.2.</span> <span class="nav-text">增加用户</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#显卡-GPU计算"><span class="nav-number">2.4.</span> <span class="nav-text">显卡 GPU计算</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#进程"><span class="nav-number">2.5.</span> <span class="nav-text">进程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#工具"><span class="nav-number">2.6.</span> <span class="nav-text">工具</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#远程控制"><span class="nav-number">3.</span> <span class="nav-text">远程控制</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装VNC-server"><span class="nav-number">3.1.</span> <span class="nav-text">安装VNC-server</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装teamviewer或xrdp"><span class="nav-number">3.2.</span> <span class="nav-text">安装teamviewer或xrdp</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#美化和汉化man"><span class="nav-number">4.</span> <span class="nav-text">美化和汉化man</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#汉化"><span class="nav-number">4.1.</span> <span class="nav-text">汉化</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#小技巧"><span class="nav-number">5.</span> <span class="nav-text">小技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#让上一个命令以管理员身份执行"><span class="nav-number">5.1.</span> <span class="nav-text">让上一个命令以管理员身份执行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#快捷键"><span class="nav-number">5.2.</span> <span class="nav-text">快捷键</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#暂停并在后台运行命令"><span class="nav-number">5.3.</span> <span class="nav-text">暂停并在后台运行命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下载"><span class="nav-number">5.4.</span> <span class="nav-text">下载</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#普通下载"><span class="nav-number">5.4.1.</span> <span class="nav-text">普通下载</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下载视频"><span class="nav-number">5.4.2.</span> <span class="nav-text">下载视频</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后台下载视频"><span class="nav-number">5.4.3.</span> <span class="nav-text">后台下载视频</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#虚拟化技术"><span class="nav-number">6.</span> <span class="nav-text">虚拟化技术</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Docker"><span class="nav-number">6.1.</span> <span class="nav-text">Docker</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#指令-1"><span class="nav-number">6.1.1.</span> <span class="nav-text">指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dockerfile"><span class="nav-number">6.1.2.</span> <span class="nav-text">Dockerfile</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#建立Dockerfile"><span class="nav-number">6.2.</span> <span class="nav-text">建立Dockerfile</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#镜像打包发布"><span class="nav-number">6.2.1.</span> <span class="nav-text">镜像打包发布</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Singularity"><span class="nav-number">6.3.</span> <span class="nav-text">Singularity</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#指令-2"><span class="nav-number">6.3.1.</span> <span class="nav-text">指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#镜像打包发布-1"><span class="nav-number">6.3.2.</span> <span class="nav-text">镜像打包发布</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#wine"><span class="nav-number">7.</span> <span class="nav-text">wine</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Ubuntu"><span class="nav-number">7.1.</span> <span class="nav-text">Ubuntu</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CentOS"><span class="nav-number">7.2.</span> <span class="nav-text">CentOS</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#内网穿透"><span class="nav-number">8.</span> <span class="nav-text">内网穿透</span></a></li></ol></div>
             
 
           </div>
@@ -940,7 +961,7 @@ cp /usr/lib64/wine/fakedlls/winebus.sys /home/xzhou/.wine/drive_c/windows/system
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
@@ -952,7 +973,7 @@ cp /usr/lib64/wine/fakedlls/winebus.sys /home/xzhou/.wine/drive_c/windows/system
 </div>
 
 
-  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.7.1</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0</div>
 
 
 

@@ -109,19 +109,19 @@
 
 
   <meta name="description" content="VS知识快捷键Ctrl-K + Ctrl-C 注释一段选择代码Ctrl-K + Ctrl-U 取消一段选择代码的注释Ctrl-K + Ctrl-D 格式化整篇代码">
-<meta name="keywords" content="C++,Visual Studio">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C++ and VS">
-<meta property="og:url" content="http://yoursite.com/2018/07/29/C++ and VS/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/07/29/C++%20and%20VS/index.html">
 <meta property="og:site_name" content="Blog of Xiao">
 <meta property="og:description" content="VS知识快捷键Ctrl-K + Ctrl-C 注释一段选择代码Ctrl-K + Ctrl-U 取消一段选择代码的注释Ctrl-K + Ctrl-D 格式化整篇代码">
-<meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/2018/07/29/C++%20and%20VS/1.png">
 <meta property="og:image" content="http://yoursite.com/2018/07/29/C++%20and%20VS/2.png">
-<meta property="og:updated_time" content="2018-11-07T11:49:22.261Z">
+<meta property="article:published_time" content="2018-07-29T14:21:00.000Z">
+<meta property="article:modified_time" content="2018-11-07T11:49:22.261Z">
+<meta property="article:author" content="xzhou">
+<meta property="article:tag" content="C++">
+<meta property="article:tag" content="Visual Studio">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="C++ and VS">
-<meta name="twitter:description" content="VS知识快捷键Ctrl-K + Ctrl-C 注释一段选择代码Ctrl-K + Ctrl-U 取消一段选择代码的注释Ctrl-K + Ctrl-D 格式化整篇代码">
 <meta name="twitter:image" content="http://yoursite.com/2018/07/29/C++%20and%20VS/1.png">
 
 
@@ -179,7 +179,7 @@
   </style>
 </noscript>
 
-</head>
+<meta name="generator" content="Hexo 4.2.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -386,7 +386,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/29/C++ and VS/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/29/C++%20and%20VS/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="xzhou">
@@ -462,7 +462,7 @@
                 <span class="post-meta-item-text">In</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/编程/" itemprop="url" rel="index"><span itemprop="name">编程</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/%E7%BC%96%E7%A8%8B/" itemprop="url" rel="index"><span itemprop="name">编程</span></a></span>
 
                 
                 
@@ -527,7 +527,7 @@
 <li><p>这也是默认的输入输出的根目录，也就是说，如果程序中打开或新建一个文件，只给文件名的话，就从这个目录打开.</p>
 </li>
 </ul>
-<h2 id="疑问"><a href="#疑问" class="headerlink" title="疑问"></a>疑问</h2><h3 id="为什么项目总是让我们编译"><a href="#为什么项目总是让我们编译" class="headerlink" title="为什么项目总是让我们编译"></a>为什么项目总是让我们编译</h3><p>查看工具-&gt;选项-&gt;项目和解决方案-&gt;MSBuild项目生成输出详细级别<br><img src="/2018/07/29/C++%20and%20VS/1.png"><br>再把 视图-&gt;输出 中的内容复制到txt中 寻找类似语句<br>“项目不是最新的，因为缺少…”<br><img src="/2018/07/29/C++%20and%20VS/2.png"><br>修复后对解决方案或项目选择全部生成。之后运行就正常了</p>
+<h2 id="疑问"><a href="#疑问" class="headerlink" title="疑问"></a>疑问</h2><h3 id="为什么项目总是让我们编译"><a href="#为什么项目总是让我们编译" class="headerlink" title="为什么项目总是让我们编译"></a>为什么项目总是让我们编译</h3><p>查看工具-&gt;选项-&gt;项目和解决方案-&gt;MSBuild项目生成输出详细级别<br><img src="/2018/07/29/C++%20and%20VS/1.png" class=""><br>再把 视图-&gt;输出 中的内容复制到txt中 寻找类似语句<br>“项目不是最新的，因为缺少…”<br><img src="/2018/07/29/C++%20and%20VS/2.png" class=""><br>修复后对解决方案或项目选择全部生成。之后运行就正常了</p>
 <p>Note:</p>
 <ul>
 <li><p>不是“MSBuild项目生成日志文件详细级别”，那个内容不够丰富，会遗漏一些</p>
@@ -548,14 +548,12 @@
 </ul>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">sprintf</span><span class="params">( <span class="keyword">char</span> *buffer, <span class="keyword">const</span> <span class="keyword">char</span> *format, [ argument] … )</span><span class="comment">//把格式化的数据写入某个字符串缓冲区buffer中</span></span></span><br><span class="line"><span class="function"><span class="title">sprintf</span><span class="params">(szLstFile,<span class="string">"%s\\lists\\phoneme.lst"</span>,g_LibCfg.szPrjDir)</span></span>;<span class="comment">//把 g_LibCfg.szPrjDir 按照 "%s\\lists\\phoneme.lst"格式转化，并存在 szLstFile 中</span></span><br></pre></td></tr></table></figure>
 <ul>
-<li><p>sscanf</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">sscanf</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *buffer,<span class="keyword">const</span> <span class="keyword">char</span> *format,[argument ]...)</span></span>;  <span class="comment">//sscanf会从buffer里读进数据，依照format的格式将数据写入到argument里。</span></span><br></pre></td></tr></table></figure>
+<li>sscanf<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">sscanf</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *buffer,<span class="keyword">const</span> <span class="keyword">char</span> *format,[argument ]...)</span></span>;  <span class="comment">//sscanf会从buffer里读进数据，依照format的格式将数据写入到argument里。</span></span><br></pre></td></tr></table></figure></li>
+<li>fgets<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">char</span> *<span class="title">fgets</span><span class="params">(<span class="keyword">char</span> *buf, <span class="keyword">int</span> bufsize, FILE *stream)</span></span>;<span class="comment">//从文件结构体指针stream中读取数据，每次读取一行。读取的数据保存在buf指向的字符数组中，每次最多读取bufsize-1个字符（第bufsize个字符赋'\0'）</span></span><br></pre></td></tr></table></figure>
 </li>
-<li><p>fgets</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">char</span> *<span class="title">fgets</span><span class="params">(<span class="keyword">char</span> *buf, <span class="keyword">int</span> bufsize, FILE *stream)</span></span>;<span class="comment">//从文件结构体指针stream中读取数据，每次读取一行。读取的数据保存在buf指向的字符数组中，每次最多读取bufsize-1个字符（第bufsize个字符赋'\0'）</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>fgets返回值</p>
-</li>
+</ul>
+<ul>
+<li>fgets返回值</li>
 </ul>
 <ol>
 <li>成功，则返回第一个参数buf</li>
@@ -563,35 +561,19 @@
 <li>如果发生读入错误，error指示器被设置，返回NULL，buf的值可能被改变</li>
 </ol>
 <ul>
-<li><p>fscanf</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">fscanf</span><span class="params">(FILE*stream, constchar*format, [argument...])</span></span>; <span class="comment">//其功能为根据数据格式(format)从输入流(stream)中写入数据(argument)；与fgets的差别在于：fscanf遇到空格和换行时结束，注意空格时也结束，fgets遇到空格不结束。</span></span><br><span class="line"><span class="built_in">fscanf</span>(fpPhone,<span class="string">" %s %s"</span>,szTmpStr,szTmpStr);<span class="comment">//只会将第二个字符串赋值给szTmpStr</span></span><br></pre></td></tr></table></figure>
+<li>fscanf<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">fscanf</span><span class="params">(FILE*stream, constchar*format, [argument...])</span></span>; <span class="comment">//其功能为根据数据格式(format)从输入流(stream)中写入数据(argument)；与fgets的差别在于：fscanf遇到空格和换行时结束，注意空格时也结束，fgets遇到空格不结束。</span></span><br><span class="line"><span class="built_in">fscanf</span>(fpPhone,<span class="string">" %s %s"</span>,szTmpStr,szTmpStr);<span class="comment">//只会将第二个字符串赋值给szTmpStr</span></span><br></pre></td></tr></table></figure></li>
+<li>fread<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">size_t</span> <span class="title">fread</span> <span class="params">( <span class="keyword">void</span> * ptr, <span class="keyword">size_t</span> size, <span class="keyword">size_t</span> count, FILE * stream )</span></span>;<span class="comment">//从文件流指针stream处读count个数据，每个数据大小size个字节，放到ptr中存储。</span></span><br></pre></td></tr></table></figure></li>
+<li>fwrite<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">size_t</span> <span class="title">fwrite</span> <span class="params">( <span class="keyword">const</span> <span class="keyword">void</span> * ptr, <span class="keyword">size_t</span> size, <span class="keyword">size_t</span> count, FILE * stream )</span><span class="comment">//fwrite()用来将数据写入文件流中,将ptr指向的数据地址的内容输出至stream文件指针指向的文件</span></span></span><br></pre></td></tr></table></figure>
 </li>
-<li><p>fread</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">size_t</span> fread ( <span class="keyword">void</span> * ptr, <span class="keyword">size_t</span> size, <span class="keyword">size_t</span> count, FILE * stream );<span class="comment">//从文件流指针stream处读count个数据，每个数据大小size个字节，放到ptr中存储。</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>fwrite</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">size_t</span> fwrite ( <span class="keyword">const</span> <span class="keyword">void</span> * ptr, <span class="keyword">size_t</span> size, <span class="keyword">size_t</span> count, FILE * stream )<span class="comment">//fwrite()用来将数据写入文件流中,将ptr指向的数据地址的内容输出至stream文件指针指向的文件</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>memset</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> *<span class="title">memset</span><span class="params">(<span class="keyword">void</span> *s, <span class="keyword">int</span> ch, <span class="keyword">size_t</span> n)</span></span>;<span class="comment">//函数解释：将s中当前位置后面的n个字节（typedef unsigned int size_t ）用 ch 替换并返回 s</span></span><br><span class="line"><span class="comment">//memset：作用是在一段内存块中填充某个给定的值，它是对较大的结构体或数组进行清零操作的一种最快方法</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>strstr</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">extern</span> <span class="keyword">char</span> *<span class="title">strstr</span><span class="params">(<span class="keyword">char</span> *str1, <span class="keyword">const</span> <span class="keyword">char</span> *str2)</span></span>;<span class="comment">//返回值；若str2是str1的子串，则返回str2在str1的首次出现的地址；如果str2不是str1的子串，则返回NULL。</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>strncpy</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">char</span> *<span class="title">strncpy</span><span class="params">(<span class="keyword">char</span> *dest, <span class="keyword">const</span> <span class="keyword">char</span> *src, <span class="keyword">int</span> n)</span><span class="comment">//把src所指向的字符串中以src地址开始的前n个字节复制到dest所指的数组中，并返回dest。</span></span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>strcpy</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">char</span> *<span class="title">strcpy</span><span class="params">(<span class="keyword">char</span> *dest, <span class="keyword">const</span> <span class="keyword">char</span> *src)</span></span>;<span class="comment">//strcpy()会将参数src 字符串拷贝至参数dest 所指的地址。</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>strcmp</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">extern</span> <span class="keyword">int</span> <span class="title">strcmp</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *s1,<span class="keyword">const</span> <span class="keyword">char</span> *s2)</span></span>;</span><br><span class="line"><span class="comment">//当s1&lt;s2时，返回为负数</span></span><br><span class="line"><span class="comment">//当s1=s2时，返回值= 0</span></span><br><span class="line"><span class="comment">//当s1&gt;s2时，返回正数</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>memcpy</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> * <span class="title">memcpy</span> <span class="params">( <span class="keyword">void</span> * destination, <span class="keyword">const</span> <span class="keyword">void</span> * source, <span class="keyword">size_t</span> num )</span></span>;<span class="comment">//从source处读num个字节放到destination指向的内存中去。</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>assert<br>assert宏能测试传入表达式的真假值，当表达式为真(true)，则不会有任何反应；当表达式为假(false)，则函数将输出错误信息，并中断程序的执行。</p>
-</li>
+</ul>
+<ul>
+<li>memset<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> *<span class="title">memset</span><span class="params">(<span class="keyword">void</span> *s, <span class="keyword">int</span> ch, <span class="keyword">size_t</span> n)</span></span>;<span class="comment">//函数解释：将s中当前位置后面的n个字节（typedef unsigned int size_t ）用 ch 替换并返回 s</span></span><br><span class="line"><span class="comment">//memset：作用是在一段内存块中填充某个给定的值，它是对较大的结构体或数组进行清零操作的一种最快方法</span></span><br></pre></td></tr></table></figure></li>
+<li>strstr<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">extern</span> <span class="keyword">char</span> *<span class="title">strstr</span><span class="params">(<span class="keyword">char</span> *str1, <span class="keyword">const</span> <span class="keyword">char</span> *str2)</span></span>;<span class="comment">//返回值；若str2是str1的子串，则返回str2在str1的首次出现的地址；如果str2不是str1的子串，则返回NULL。</span></span><br></pre></td></tr></table></figure></li>
+<li>strncpy<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">char</span> *<span class="title">strncpy</span><span class="params">(<span class="keyword">char</span> *dest, <span class="keyword">const</span> <span class="keyword">char</span> *src, <span class="keyword">int</span> n)</span><span class="comment">//把src所指向的字符串中以src地址开始的前n个字节复制到dest所指的数组中，并返回dest。</span></span></span><br></pre></td></tr></table></figure></li>
+<li>strcpy<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">char</span> *<span class="title">strcpy</span><span class="params">(<span class="keyword">char</span> *dest, <span class="keyword">const</span> <span class="keyword">char</span> *src)</span></span>;<span class="comment">//strcpy()会将参数src 字符串拷贝至参数dest 所指的地址。</span></span><br></pre></td></tr></table></figure></li>
+<li>strcmp<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">extern</span> <span class="keyword">int</span> <span class="title">strcmp</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *s1,<span class="keyword">const</span> <span class="keyword">char</span> *s2)</span></span>;</span><br><span class="line"><span class="comment">//当s1&lt;s2时，返回为负数</span></span><br><span class="line"><span class="comment">//当s1=s2时，返回值= 0</span></span><br><span class="line"><span class="comment">//当s1&gt;s2时，返回正数</span></span><br></pre></td></tr></table></figure></li>
+<li>memcpy<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> * <span class="title">memcpy</span> <span class="params">( <span class="keyword">void</span> * destination, <span class="keyword">const</span> <span class="keyword">void</span> * source, <span class="keyword">size_t</span> num )</span></span>;<span class="comment">//从source处读num个字节放到destination指向的内存中去。</span></span><br></pre></td></tr></table></figure></li>
+<li>assert<br>assert宏能测试传入表达式的真假值，当表达式为真(true)，则不会有任何反应；当表达式为假(false)，则函数将输出错误信息，并中断程序的执行。</li>
 </ul>
 <h2 id="疑问-1"><a href="#疑问-1" class="headerlink" title="疑问"></a>疑问</h2><h3 id="如何在sprintf函数中使用string？"><a href="#如何在sprintf函数中使用string？" class="headerlink" title="如何在sprintf函数中使用string？"></a>如何在sprintf函数中使用string？</h3><p>sprintf是C++继承自C语言的函数，无法直接支持string类型，所以要先把string类型转为基础类型，也就是char*。<br>这里需要使用string类的成员函数c_str();该成员函数功能为，将string的内容转为C语言的字符数组表达形式。<br>所以用sprintf将string对象str，输出的char[]数组array中的代码可以写作： <code>sprintf(array, &quot;%s&quot;, str.c_str());</code><br>除此外，还可以用strcpy函数，使代码更简单：<code>strcpy(array, str.c_str());</code></p>
 <h2 id="实际例子"><a href="#实际例子" class="headerlink" title="实际例子"></a>实际例子</h2><h3 id="建立二维数组"><a href="#建立二维数组" class="headerlink" title="建立二维数组"></a>建立二维数组</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//开辟内存</span></span><br><span class="line"><span class="keyword">float</span> **ppTrgAnswer_Data = <span class="keyword">new</span> <span class="keyword">float</span>*[nTrgPhoneNum];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nTrgPhoneNum; i++)</span><br><span class="line">&#123;</span><br><span class="line">    ppTrgAnswer_Data[i] = <span class="keyword">new</span> <span class="keyword">float</span>[MAX_QUES_NUM];</span><br><span class="line">    <span class="built_in">memset</span>(ppTrgAnswer_Data[i], <span class="number">0</span>, <span class="keyword">sizeof</span>(<span class="keyword">float</span>)*MAX_QUES_NUM);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//释放内存</span></span><br><span class="line"><span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; nTrgPhoneNum; i++)</span><br><span class="line">    <span class="keyword">delete</span>[] ppTrgAnswer_Data[i];</span><br><span class="line"><span class="keyword">delete</span>[] ppTrgAnswer_Data;</span><br></pre></td></tr></table></figure>
@@ -640,7 +622,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/07/30/博客更新日志/" rel="prev" title="博客更新日志">
+              <a href="/2018/07/30/%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/" rel="prev" title="博客更新日志">
                 博客更新日志 <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -719,7 +701,7 @@
               
                 <div class="site-state-item site-state-posts">
                 
-                  <a href="/archives/">
+                  <a href="/archives/%20%7C%7C%20archive">
                 
                     <span class="site-state-item-count">13</span>
                     <span class="site-state-item-name">posts</span>
@@ -862,7 +844,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
@@ -874,7 +856,7 @@
 </div>
 
 
-  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.7.1</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0</div>
 
 
 
